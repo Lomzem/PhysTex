@@ -1,0 +1,52 @@
+\documentclass[fleqn]{article}
+\setlength{\parskip}{\baselineskip}%
+\setlength{\parindent}{0pt}%
+
+\usepackage[table]{xcolor}
+\usepackage{siunitx}
+\usepackage{tabularx}
+\usepackage{float}
+\usepackage{amsmath}
+
+\begin{document}
+\setlength{\mathindent}{0pt}
+\section*{Introduction to Torque}
+\begin{table}[H]
+	\centering
+	\begin{tabularx}{\textwidth}{|X|X|}
+		\hline
+		Rotation                              & Translation                    \\
+		\hline
+		$ \Delta \theta $                     & $\Delta x $                    \\
+		\hline
+		$ \omega  $                           & $ v $                          \\
+		\hline
+		$ \alpha  $                           & $ a $                          \\
+		\hline
+		$ I $                                 & $ m $                          \\
+		\hline
+		$ \frac{1}{2} I \omega ^2 $           & $ \frac{1}{2} mv ^2 $          \\
+		\hline
+		$ I \vec{\omega } = \vec{L}  $        & $ m \vec{v} = \vec{p}  $       \\
+		\hline
+		$ \sum \vec{\tau}= I \vec{\alpha }  $ & $ \sum \vec{F} = m \vec{a}   $ \\
+		\hline
+	\end{tabularx}
+\end{table}
+
+$ \tau $ is tau $ =  $ torque
+
+\[ \text{Force vector could be broken up into } \vec{F}_{\parallel} \text{ and } \vec{F}_{\perp}\]
+\[ \text{Only } \vec{F}_{\perp} \text{ matters because } \vec{F}_{\parallel} \text{ pushes into it}        \]
+\[ \sum \vec{\tau} \propto \vec{F}_{\perp}    \]
+\[ \sum \vec{\tau} \propto \vec{r} \text{, lever-arm}   \]
+\[ \sum \vec{\tau} = \vec{r} \cdot \vec{F}   \]
+
+\underline{Note}: Dot Product took parallel and gave back scalar
+
+We want \underline{perpendiular} and \underline{vector}
+
+\[ F _{\perp} = F \sin \theta   \]
+\[ |\vec{\tau}| = |\vec{r}| \cdot |F \sin \theta |    \]
+\[ |\vec{\tau}| = |\vec{r}_{\perp}| \cdot |\vec{F}|     \]
+\end{document}

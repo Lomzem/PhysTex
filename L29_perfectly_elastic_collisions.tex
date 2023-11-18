@@ -1,0 +1,66 @@
+\documentclass[fleqn]{article}
+\setlength{\parskip}{\baselineskip}%
+\setlength{\parindent}{0pt}%
+
+\usepackage[table]{xcolor}
+\usepackage{siunitx}
+\usepackage{tabularx}
+\usepackage{float}
+\usepackage{amsmath}
+
+\begin{document}
+\setlength{\mathindent}{0pt}
+\section*{Perfetly Elastic Collisions}
+
+If $m_a = m_b$:
+\[ v _{af} = 0\]
+\[ v _{bf} = 5 \text{m/s} \]
+
+\bigbreak
+If $v _{af} < 0$:
+\[ m_a >  m_b \]
+
+\[ \vec{p}_{o} = \vec{p}_{f}     \]
+\[ KE_o=KE_f \]
+Only really works for one-dimensional problems
+
+Conservation of Momentum:
+\[ m_a+v _{ao}+m_b v _{bo} = m_av _{af} + m_bv _{bf}     \]
+
+Conservation of Energy:
+\[ \frac{1}{2} mv _{ao}^2 + \frac{1}{2} m_bv _{bo}^2 = \frac{1}{2} m_a v _{af}^2 + \frac{1}{2} m_b v _{bf}^2     \]
+\[ mv _{ao}^2 + m_bv _{bo}^2 = m_a v _{af}^2 + m_b v _{bf}^2     \]
+
+\[ m_a(v _{ao} - v _{af} ) = m_b(v _{bf} - v _{bo}  ) \]
+\[ m_a(v _{ao}^2 - v _{af}^2)= m_b(m _{bf}^2 - v _{bo}^2  ) \]
+\[ m_a((v _{ao} - v _{af}  )(v _{ao} + v _{ af}  )) = m_b((v _{bf} v _{bo})(v _{bf} + v _{bo}  ))\]
+
+Use to cancel:
+\[ m_a(v _{ao}^2 - v _{af}^2)= m_b(m _{bf}^2 - v _{bo}^2  ) \]
+
+Always true when Momentum and Energy are conserved:
+
+\underline{Important Equation:}
+\[ v _{ao} + v _{af} = v _{bf} + v _{bo}     \]
+
+\[ v _{bf} = v _{ao} + v _{af} - v _{bo}     \]
+
+Plug into conservation of momentum:
+\[ m_a v _{ao} + m_bv _{bo} = m_a v _{af} + m_b(v _{ao} + v _{af} - v _{bo}   )    \]
+\[ (m_a-m_b)v _{ao} + 2m_bv _{bo} = (m_a+m_b)v _{af}  \]
+
+Only in one dimension:
+
+Usually helpful to change reference frame to make $v _{bo} = 0$
+
+\underline{Equations to determine $a_f$ and $b_f$:}
+\[ v _{af} = \frac{m_a-m_b}{m_a+m_b} v _{ao} + \frac{2  m_b }{m_a+m_b}v _{bo}      \]
+\[ v _{bf} = \frac{2m_a}{m_a+m_b}v _{ao}  + \frac{m_b-m_a}{m_a+m_b} v _{bo}   \]
+
+
+If $m_a=m_b$ and $v _{bo}=0$:
+\[ v _{af} = 0 + 0 \]
+\[ v _{bf} = v _{ao} + 0    \]
+
+For $v _{af} < 0$, $m_a$ must be $< m_b$
+\end{document}

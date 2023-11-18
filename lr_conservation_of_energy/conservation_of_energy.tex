@@ -1,0 +1,259 @@
+\documentclass[fleqn]{article}
+\setlength{\parskip}{\baselineskip}%
+\setlength{\parindent}{0pt}%
+
+\usepackage[table]{xcolor}
+\usepackage{siunitx}
+\usepackage{tabularx}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{graphicx}
+
+\title{ Lab Report}
+\author{Lawjay Lee}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section*{Lab Partners:}
+\begin{itemize}
+	\item Raphael H.
+	\item Ishmum N.
+	\item Wyatt S.
+\end{itemize}
+
+\section*{Introduction}
+In this lab, we will conduct three experiments to verify that the total energy of a closed system is constant; in other words:
+\[ U_A+KE_A=U_B+KE_B \]
+First, we will drop a puck from rest on an incline, and calculate the total energy at our starting point and the total energy at an arbitrary Point B.
+
+Next, we will launch the puck with some initial velocity. Again, we will measure the total energy at the starting point and measure the total energy at an arbitrary Point B.
+
+Finally, we will use a pulley system to attach two masses together. One will remain on the table, while we drop the other from rest. Again, we will measure the total energy at the starting point and measure the total energy at an arbitrary Point B.
+
+\section*{Raw Data}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{part_1_2_rawdata.jpg}
+	\\Figure 1: System 1 and System 2 Paper
+\end{figure}
+For both System 1 and System 2, our group placed the puck on top of this paper. A spark timer created dots on the paper at the puck's position in 30Hz intervals. The vertical series of dots represents System 1, in which we dropped the puck on the incline from rest. The upside down parabola-like traces represent System 2, in which we launched the puck.
+
+For both System 1 and System 2, the mass of the puck was $5.4 \times 10^{-1}$ kg
+
+For both System 1 and System 2, $\Delta R=29.2$ cm
+
+For System 3, the mass of the cart was $2.467 \times 10^{-1}$ kg
+
+For System 3, the mass of the hanging weight was $2.0 \times 10^{-2}$ kg
+
+\section*{Data Analysis}
+\subsection*{System 1}
+\begin{figure}[H]
+	\includegraphics[width=0.75\textwidth]{system_1_overview.jpeg}
+	\\Figure 2: Visual of System 1
+\end{figure}
+% One of the goals of this experiment is to determine if the total energy at Point A and the total energy at Point B are equal, proving the conservation of energy in our system.
+
+% Point A represents the starting position of the puck. Since we dropped the puck from rest, Point A has no kinetic energy. However, it does have gravitational potential energy:
+Since we dropped the puck from rest, Point A has no kinetic energy. However, it does have gravitational potential energy:
+\[ E_A=mgh=mg \Delta r \sin \theta \]
+% We measured the distance from Point A to Point B ($ \Delta R$) to be 29.2 cm.
+% Because Point B is at y-position 0, it has no potential energy. However, it did accumulate some kinetic energy after sliding down the incline:
+Because Point B is at y-position 0, it has no potential energy. However, it does have kinetic energy:
+\[ E_B=\frac{1}{2} m{v_B}^2 \]
+% Now, we have to determine if these energies are equal.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{part_1.png}
+	\\Graph 1: System 1 Position vs. Time
+\end{figure}
+% Using the dots obtained from Figure 1, we manually measured the puck's displacement from its initial position at 30Hz intervals. Then, we used LoggerPro to plot the puck's position vs time. Since acceleration is constant in this system, we could use the kinematic equations for calculations on our data.
+Since acceleration is constant in this system, we could use the kinematic equations for calculations on our data:
+% When acceleration is constant, one of the kinematic equations state:
+\[ y=y_o+v_ot+\frac{1}{2} at^2 \]
+Because of this, we used a curve fit on the data in the form of:
+\[ C+Bt+At^2 \]
+According to the kinematic equation above, the A value in our curve fit represents $\frac{1}{2}a$, meaning the acceleration in our system is twice our A value from Graph 1:
+\[ A=-26.73 \text{ cm/s}^2 \]
+\[ 2A=-53.46 \text{ cm/s}^2 \]
+\[ \vec{a}_{\text{system} }  =  -5.346\times10^{-1} \text{ m/s}^2\]
+\[ |a| =5.346\times10^{-1} \text{ m/s}^2\]
+
+% If our system did not have an incline, magnitude of the acceleration in our system would be $a=g$. However since there is an incline, the magnitude of our acceleration is $a=gsin \theta$.
+Since there is an incline, the magnitude of our acceleration is $a=gsin \theta$.
+
+Since we know the value of $a$ and the value of $g$, we could solve for $\theta$ in our system:
+\[ a=g \sin \theta \]
+\[
+	\theta =
+	\arcsin \left( \frac{a}{g}  \right) =
+	\arcsin \left( \frac{5.346 \times 10^{-1} \text{ m/s}^2 }{9.8 \text{ m/s}^2 }  \right)
+	=3.13^\circ
+\]
+
+% Next, we have to find the velocity of the puck at Point B. According to Figure 2, Point B represents the position at which B is at $y=0$. Therefore, the initial velocity would represent $V_B$.
+Since $y=0$ at Point B, $v_B=v_o$
+
+According to the kinematic equation:
+\[ y=y_o+v_ot+\frac{1}{2} at^2 \]
+The B value in our curve fit would represent the initial velocity. According to Graph 1, our B value is $53.55$ cm/s. Therefore, our velocity at Point B is:
+\[ v_B=5.355\times 10^{-1} \text{ m/s}  \]
+
+Now, we have all of the unknown values from the energy equations earlier:
+\[ E_A=mgh=mg \Delta r \sin \theta \]
+\[ E_B=\frac{1}{2} m{v_B}^2 \]
+
+Plugging in these values we get:
+\[ E_A = mg \Delta r \sin \theta \]
+\[ E_A = 5.4 \times 10^{-1} \text{ kg}
+	\times 9.8 \text{ m/s}^2
+	\times 29.2 \text{ cm} \times \frac{\text{m} }{100 \text{ cm} }
+	\times \sin \left( 3.13^\circ \right)
+\]
+\[ E_A = 8.44 \times 10^{-2} \text{ J}  \]
+
+\[ E_B=\frac{1}{2} m{v_B}^2 \]
+\[ E_B=\frac{1}{2} \times
+	5.4 \times 10^{-1} \text{ kg} \times
+	\left( 5.355 \times 10^{-1} \text{ m/s} \right)^2
+\]
+\[ E_B = 7.74 \times 10^{-2} \text{ J}  \]
+
+Then, we found the percent difference between these two energies. Since both energies were found theoretically, we weighted them the same.
+\[ \% \text{ Error}  = \frac{(E_A - E_B)}{(E_A+E_B)/2} \times 100 \%
+	=8.65\%
+\]
+
+\subsection*{System 2}
+\begin{figure}[H]
+	\includegraphics[width=0.75\textwidth]{system_2_overview.jpeg}
+	\\Figure 3: Overview of System 2
+\end{figure}
+
+% In System 2, we launched the puck with some initial velocity at an arbitrary angle. Since we designated that Point A, the starting position was at $y=0$, Point A only had kinetic energy and no potential energy. Therefore,
+We designated that Point A, the starting position was at $y=0$, Point A only had kinetic energy and no potential energy. Therefore,
+\[ E_A=\frac{1}{2}m{v_o}^2=
+	\frac{1}{2} m \left( {v _{ox} }^2 + {v _{oy} }^2 \right)
+\]
+However, the puck still had some velocity in the x-direction at Point B while also having some potential energy. We assumed that the acceleration in the x-direction was 0. Therefore the total energy at Point B was:
+\[ E_B =
+	mgh + \frac{1}{2} m{v _{ox} }^2
+\]
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{part_2_x.png}
+	\\Graph 2: System 2 X-Position vs. Time
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{part_2_y.png}
+	\\Graph 3: System 2 Y-Position vs. Time
+\end{figure}
+
+% To solve our energy equations, we also had to determine the initial velocities in the x-direction and y-direction of the puck. We knew that the spark timer created dots on the paper in 30Hz intervals, meaning we could measure the displacement in the y-direction and the displacement in x-direction from the starting position and plot both each against time.
+
+Since we assumed velocity was constant, the slope of Graph 2 would represent the velocity in the x-direction at all points. We used a linear fit on Graph 2 and found that our slope or $v_x = 14.82 $ cm/s $=1.482 \times 10^{-1} $ m/s
+
+% Additionally, to find the initial velocity in the y-direction, we used the assumption that acceleration was constant because the force of gravity should have been the only force on the puck. Since we assumed acceleration was constant, we could use the kinematic equations:
+Assuming acceleration is constant, we could use the kinematic equations:
+\[ y=y_o+v_ot+\frac{1}{2} at^2 \]
+% Again, we used a curve fit in the form of $C + Bt + A t^2$. In this case, we wanted $v_o$, so we found the B value from the curve fit, $41.53 \text{ cm/s}=4.153\times 10^{-1}$ m/s to be our initial velocity in the y-direction.
+Using the curve fit, we found the B value from the curve fit, $41.53 \text{ cm/s}=4.153\times 10^{-1}$ m/s to be our $v_{oy}$
+
+According to Figure 3: $h = \Delta r \sin \theta$
+\[ h = \Delta r \sin \theta \]
+We setup our System 2 such that we had the same $\Delta r$ from Part 1, $29.2$ cm. Then, we used the same process from Part 1 to find $\theta$:
+
+\[ |\text{A Value}|= \frac{1}{2} |{a _{\text{system}}| }   \]
+\[ |a|=2 \times |{-15.54 \text{ cm/s}}| \times \frac{\text{m} }{100 \text{ cm} } = 3.11 \times 10^{-1}\text{ m/s}^2  \]
+\[ a = g \sin \theta \]
+\[ \theta = \arcsin\left(\frac{a}{g} \right)=
+	\arcsin \left( \frac{3.11 \times 10^{-1} \text{m/s}^2 }{9.8 \text{m/s}^2 }  \right)=
+	1.82^\circ
+\]
+
+Now, we had all the values we needed to determine the total energy at Points A and B:
+\[ E_A=
+	\frac{1}{2} m \left( v _{ox}^2+v _{oy}^2   \right)
+\]
+\[ E_A=
+	\frac{1}{2} \times 5.4 \times 10^{-1} \text{ kg}
+	\left( (1.482 \times 10^{-1} \text{m/s} )^2 + (
+	4.153 \times 10^{-1} \text{ m/s}
+	)^2
+	\right)
+\]
+\[ E_A=5.25 \times 10^{-2} \text{ J} \]
+
+\[ E_B = mgh + \frac{1}{2} m{v _{ox} }^2 \]
+\[ E_B= m \left( g \Delta r \sin \theta+ \frac{1}{2} {v _{ox} }^2  \right) \]
+\[ E_B =
+	5.4 \times 10^{-1} \text{ kg} \left( 9.8 \text{ m/s}^2 \times 29.2 \text{ cm} \times \sin \left( 1.82^\circ \right)\times \frac{\text{m} }{100 \text{ cm} }
+	+ \frac{1}{2} (1.482 \times 10^{-1} \text{m/s} )^2
+	\right)
+\]
+\[ E_B = 5.50 \times 10^{-2}\text{ J}   \]
+
+Then, we found the percent difference between these two energies. Since both energies were found theoretically, we weighted them the same.
+\[ \% \text{ Error}  = \frac{(E_A - E_B)}{(E_A+E_B)/2} \times 100\%
+	=-4.65\%
+\]
+
+\section*{System 3}
+\begin{figure}[H]
+	\includegraphics[width=0.75\textwidth]{system_3_overview.jpeg}
+	\\Figure 4: Overview of System 3
+\end{figure}
+At Point A in Figure 4, there was no kinetic energy. However, there was potential energy from both the large mass and the hanging mass. We set our $y=0$ point at the height of the hanging mass at Point B. Using this coordinate system:
+\[ E_A= M_gh_m + mgd \]
+At Point B, there is some kinetic energy, but there is no potential energy in the hanging mass since it's at $y=0$:
+\[ E_B = M_gh_m+ \frac{1}{2} \left( M+m \right){v_B}^2 \]
+The conservation of energy equation would be valid if these energy equations were equal to each other:
+\[ M_gh_m+mgd = M_gh_m + \frac{1}{2}\left( M+m \right){v_B}^2 \]
+\[ mgd= \frac{1}{2}\left( M+m \right){v_B}^2 \]
+
+The PASCO Smart Cart tracked its own velocity and position and created Graph 4:
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{part_3.png}
+	\\Graph 4: System 3 Cart Velocity vs Cart Position
+\end{figure}
+
+We picked some arbitrary Point B before the hanging mass hit the ground, where it's displacement $d=4.487 \times 10^{-1}$ m and $v_B=7.30 \times 10^{-1}$ m/s
+\[ E_A = \left(2.0 \times 10^{-2} \text{ kg}\right) \left( 9.8 \text{ m/s}^2  \right) \left( 4.487 \times 10^{-1} \text{ m}  \right)
+\]
+\[E_A = 8.79 \times 10^{-2} \text{ J}\]
+
+\[ E_B = \frac{1}{2} \left(2.673 \times 10^{-1} \text{ kg}  +
+	2.0 \times 10^{-2} \text{ kg}
+	\right)
+	\left( 7.30 \times 10^{-1} \text{ m/s}  \right)^2
+\]
+\[ E_B=7.66 \times 10^{-2} \text{ J}  \]
+
+Then, we found the percent difference between these two energies. Since both energies were found theoretically, we weighted them the same.
+\[ \% \text{ Error}  = \frac{(E_A - E_B)}{(E_A+E_B)/2} \times 100\%
+	=13.7 \%
+\]
+
+\section*{Conclusion}
+In System 1, we calculated the theoretical total energy at the moment an object is dropped on an incline and the total energy at an arbitrary moment after. We found that the percent error between these two totals was $8.65\%$
+
+In System 2, we calculated the theoretical total energy at the moment we launched at object with some initial velocity and the total energy when that object reached its peak height. The calculated percent error between these two totals was $-4.65\%$
+
+In System 3, we calculated the theoretical total energy at the moment we released a PASCO Smart Cart attached to a hanging mass and the total energy at an arbitrary time before the hanging object hit the ground. The calculated percent error between these two totals was $13.7\%$
+
+Based on these relatively low percent errors, we could conclude that in general, the total energy in a closed system is constant, and the equation for the conservation of energy is true:
+\[ U_A + KE_A = U_B + KE_B \]
+
+Although we concluded that the conservation of energy equation is true, our experiments and calculations could have had some error. For example, we did not take into account non-conservative forces, assuming that they were negligible.
+
+We used air tables and the PASCO Smart Cart to try to minimize the work from friction and air resistance, but these non-conservative forces, may have contributed to the percent errors between our total energies. Additionally, in our procedure for System 1 and System 2, we manually measured the displacement of the object, introducing some error due from the lack of precision of the ruler.
+
+The larger percent error found in System 3 may have come from the technologies involved. The timing from the computer recording starting and the cart actually moving could have mismeasured initial position and velocity. If we chose a different arbitrary Point B to perform calculations on, we may have had more or less accurate results.
+\end{document}

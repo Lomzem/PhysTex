@@ -1,0 +1,54 @@
+\documentclass[fleqn]{article}
+\setlength{\parskip}{\baselineskip}%
+\setlength{\parindent}{0pt}%
+
+\usepackage[table]{xcolor}
+\usepackage{siunitx}
+\usepackage{tabularx}
+\usepackage{float}
+\usepackage{amsmath}
+
+\begin{document}
+\setlength{\mathindent}{0pt}
+\section*{Rocket Science}
+Conservation of Momentum comes directly from Newton's Third Law
+
+If $\sum \vec{F} = 0 $, $\vec{p}_{o} = \vec{p}_{f}$
+\[ 0=-\Delta mu + (m-\Delta m)v\]
+u: speed of rock, v = speed of you
+
+\[ \vec{F} = \frac{d \vec{p} }{dt}  = \frac{d}{dt} \left( m \vec{v}  \right)= \frac{dm}{dt}u+m \frac{d \vec{v} }{dt}=0 \]
+Multiply everything by $dt$
+\[ dmu + mdv = 0 \]
+Divide everything by $m$
+\[ \frac{dm}{m} u+dv=0 \]
+Assume $u$ is constant, launching things out the back at a constant rate
+
+$u$ is kind of like average speed
+
+Integrate both sides
+\[ \int_{m_o}^{m_f} \frac{dm}{m} u + \int_{v_o}^{v_f} dv=0\ \]
+\[ u \left[ \ln m \right]^{m_f}_{m_o}   + \Delta v=0 \]
+\[ -u \ln \left( \frac{m_f}{m_o}  \right) = \Delta v\]
+
+\underline{Important Equation}
+\[ \Delta v = u \ln \left( \frac{m_o}{m_f}  \right) \]
+
+If we use 80\% of $m_o$ as fuel. What is our max speed in terms of $u$?
+
+$m_f = 0.2m_o$
+\[ \ln \left( \frac{m_o}{0.2m_o}  \right) = \ln \left( \frac{1}{0.2}\right) = \ln 5 \]
+\[ \Delta v= \ln \left(5\right) u\]
+\[ \Delta v = 1.61 u \]
+
+On Earth with \underline{gravity}
+\[ \sum \vec{F} = -mg\]
+\[ \frac{dm}{dt} u + m \frac{dv}{dt} = -mg \]
+Multiply by $dt$ and divide by mass
+\[ \frac{dm}{m} u + dv = -g\, dt \]
+Integrate all terms
+\[ u \ln \left( \frac{m_f}{m_o}  \right) + \Delta v =-gt\]
+Time matters because of an acceleration
+\[ \Delta v= u \ln \left( \frac{m_o}{m_f}  \right) - gt \]
+\end{document}
+

@@ -1,0 +1,55 @@
+\documentclass[fleqn]{article}
+\setlength{\parskip}{\baselineskip}%
+\setlength{\parindent}{0pt}%
+
+\usepackage[table]{xcolor}
+\usepackage{siunitx}
+\usepackage{tabularx}
+\usepackage{float}
+\usepackage{amsmath}
+
+\begin{document}
+\setlength{\mathindent}{0pt}
+\section*{Rotational Motion}
+Still assuming $R$ is constant.
+
+The angle $\theta$ makes an arc: $\Delta s$
+\[ \Delta s=R \cdot \theta \]
+\[ v = \frac{d \Delta s}{dt} = R \frac{d \theta}{dt} \]
+
+Remember: $\frac{d \theta}{dt} = \omega$
+
+If radian $= \Delta s = R$ then $\theta = 1$ radian, and $\theta = \frac{\Delta s}{R} $
+
+$v$ (tangential velocity) $= R \omega$
+\[ a = \frac{dv}{dt} = R \frac{d \omega}{dt}  \]
+\[ \text{We're going to call } \frac{d \omega}{dt}\text{: } \alpha \text{ (angular acceleration)}  \]
+Assume $\alpha$ is constant
+
+Therefore, \underline{$\vec{a}_{t}$ (tangential acceleration) = $R \alpha$}
+
+If we take:
+\[ \omega = \frac{d \theta}{dt}  \]
+\[ d \theta = w\, dt \]
+\[ \int d \theta  = \int \omega\, dt\]
+
+Using:
+\[ \alpha = \frac{d \omega}{dt} \]
+\[ d \omega = \alpha \, dt \]
+\[ \int d \omega = \int \alpha \, dt \]
+\[ \Delta \omega = \alpha t \]
+\[ \omega = \omega _{0} + \alpha t  \]
+
+\[ \int d \theta  = \int \omega\, dt\]
+\[ \omega = \omega _{0} + \alpha t  \]
+\[ \Delta \theta = \int \left( \omega _{0} + \alpha t  \right)\, dt
+	= \omega _{0}t + \frac{1}{2} \alpha t^2
+\]
+
+\underline{Angular Kinematics}
+\begin{enumerate}
+	\item $\vec{\theta} = \vec{\theta }_{0} + \vec{\omega }_{0}t + \frac{1}{2} \vec{\alpha }t^2    $
+	\item $\vec{\omega } = \vec{\omega} _{0} + \vec{\alpha}t    $
+	\item $\omega ^2 = {\omega _{0}}^2 + 2 \alpha \Delta \theta $
+\end{enumerate}
+\end{document}

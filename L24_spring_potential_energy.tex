@@ -1,0 +1,81 @@
+\documentclass[fleqn]{article}
+\setlength{\parskip}{\baselineskip}%
+\setlength{\parindent}{0pt}%
+
+\usepackage[table]{xcolor}
+\usepackage{siunitx}
+\usepackage{tabularx}
+\usepackage{float}
+\usepackage{amsmath}
+
+\begin{document}
+\setlength{\mathindent}{0pt}
+
+\section*{Spring Potential Energy}
+Spring potential energy is a \underline{restorative force} (it returns to equilibrium)
+
+
+\[ \text{Hookes Law: } \vec{F}_{s}  = -k \Delta \vec{x} \]
+\[ \Delta U=-W \]
+\[ \Delta U _{s} = - W _{s}  \]
+
+
+\[ W = \int_{A}^{B} \vec{F} _{s} \ d \vec{r}  \]
+
+\[ \vec{F} _{s} \text{ in the direction } \leftarrow \]
+\[ \Delta \vec{r} \text{ in the direction } \rightarrow \]
+\[ \angle \text{ between the vectors is }180 ^{\circ} \]
+
+\[ W _{s} = \int_{A}^{B} |\vec{F} _{s} | |d \vec{r} |\ \cos(180 ^{\circ}) \]
+\[ W  _{s} = - \int_{A}^{B} k \Delta x \ dx\]
+\[ W _{s} = \left[ -\frac{1}{2} k \Delta x ^2 \right]^B_A \]
+
+\[ \text{ Remember: } \Delta U _{s} = -W _{s}   \]
+\[ U _{sA} = \frac{1}{2} k (\Delta x _{A}) ^2 \]
+
+\[ U _{s} = \frac{1}{2} k (\Delta x)^2  \]
+\[ U _{g} = mgh \]
+\[ \text{Above two equations found using: } \Delta U=-W \]
+\[ \text{Only true for conservative forces}  \]
+\[ \text{Also: } W = \Delta KE \]
+
+\[ \text{When we have \underline{only} conservative forces:}  \]
+\[ W _{tot} = \Delta KE \]
+\[ W _{tot} = - \Delta U \]
+\[ \text{Meaning that: } \Delta KE = - \Delta U \]
+
+\[ KE _{f} - KE _{o} = - (U _{f} - U _{o} )\]
+\[ KE _{f}  + U _{f} = KE _{o}  + U _{o}  \]
+{This is the conservation of energy}
+
+\[ \text{Let's say at Point A, all energy is kinetic}  \]
+\[ \text{At Point B, all energy is potential}  \]
+\[ \text{At Point C, kinetic energy and potential energy are equal}  \]
+
+What's the velocity at Point C?
+\[ E _{totc} = KE _{c} + U _{c}  \]
+\[ KE _{c} = \frac{1}{2} mv_c^2 \]
+\[ \text{Then, } KE_c= \frac{1}{2} mv_c ^2 = \frac{1}{2} E _{tot}  = \frac{1}{2} \left[ \frac{1}{2} mv _{a} ^2  \right]\]
+\[ \text{Therefore, } v_c = \frac{v_a}{\sqrt{2} }  \]
+
+Consider a spring:
+\begin{itemize}
+	\item $\mu \ne 0$
+	\item At point o, spring is fully extended
+	\item At point A, spring is at equilibrium
+\end{itemize}
+
+We know that at Point o, $KE_o=0$ (Fully extended)
+
+We know that at point A, $U_{sA}=0$ (Equilibrium)
+
+When $\mu=0$, $KE_o + U_{so} = KE_A + U_{sA}$
+
+With friction, $KE_A$ will be less because $W_f$ is taking energy out of the system
+
+\[ W_f+U _{so} =KE_A \]
+Place work from non-conservative forces with the initial energy of the system (because the work from friction is going to be negative)
+\[ KE_o + U_o + W _{\text{nc}} =KE_f + U_f \]
+
+
+\end{document}

@@ -1,0 +1,219 @@
+\documentclass[fleqn]{article}
+\setlength{\parskip}{\baselineskip}%
+\setlength{\parindent}{0pt}%
+
+\usepackage[table]{xcolor}
+\usepackage{siunitx}
+\usepackage{tabularx}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{caption}
+
+\title{Torques and Static Equilibrium Lab Report}
+\author{Lawjay Lee}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section*{Lab Partners:}
+\begin{itemize}
+	\item Raphael H.
+	\item Ishmum N.
+	\item Wyatt S.
+\end{itemize}
+
+\section*{Introduction}
+% \setlength{\mathindent}{0pt}
+In this lab, our group examined three different systems that replicated human body lever arms to examine systems with $\sum \vec{\tau}=0$. In all three systems, we measured the forces on our system and their respective perpendicular distance from the lever arm.
+
+By using $\sum \vec{\tau} = 0$, we created linear relationships between different forces. By plotting these relationships and comparing them to their actual mechanical advantage ratio, we could verify if our calculations represent the true efficiency of the system.
+\section*{Raw Data}
+In all three systems, lengths to forces represent perpendicular distance from lever arm to the line of action of the force.
+
+\subsubsection*{\underline{System I: Triceps}}
+\begin{table}[H]
+	\centering
+	\setlength{\extrarowheight}{2pt}
+	\begin{tabularx}{\textwidth}{|X|X|}
+		\hline
+		Length to $F$ (cm)   & 38.3 \\
+		\hline
+		Length to $F_T$ (cm) & 4.00 \\
+		\hline
+		Length to $F_g$ (cm) & 18.5 \\
+		\hline
+	\end{tabularx}
+\end{table}
+
+
+\rowcolors{2}{gray!15}{white}
+\begin{table}[H]
+	\setlength{\extrarowheight}{2pt}
+	\centering
+	\begin{tabularx}{\textwidth}{|X|X|X|}
+		\rowcolor{gray!50}
+		\hline
+		Trial & $F_T$ (N) & $F$ (N) \\
+		\hline
+		1     & 18.1      & 6.37    \\
+		\hline
+		2     & 27.9      & 6.62    \\
+		\hline
+		3     & 37.7      & 7.84    \\
+		\hline
+		4     & 47.5      & 8.82    \\
+		\hline
+		5     & 58.8      & 9.80    \\
+		\hline
+		6     & 68.6      & 10.5    \\
+		\hline
+	\end{tabularx}
+\end{table}
+
+\subsubsection*{\underline{System II: Biceps}}
+\rowcolors{2}{white}{white}
+\begin{table}[H]
+	\setlength{\extrarowheight}{2pt}
+	\centering
+	\begin{tabularx}{\textwidth}{|X|X|}
+		\hline
+		Length to $F_T$ (cm) & 5.50 \\ \hline
+		Length to $F_g$ (cm) & 7.30 \\ \hline
+		Length to $F$ (cm)   & 36.8 \\ \hline
+	\end{tabularx}
+\end{table}
+
+\rowcolors{2}{gray!15}{white}
+\begin{table}[H]
+	\setlength{\extrarowheight}{2pt}
+	\centering
+	\begin{tabularx}{\textwidth}{|X|X|X|}
+		\rowcolor{gray!50}
+		\hline
+		Trial & $F_T$ (N) & $F$ (N) \\ \hline
+		1     & 24.5      & 0.980   \\ \hline
+		2     & 33.3      & 1.96    \\ \hline
+		3     & 38.2      & 2.94    \\ \hline
+		4     & 45.1      & 3.92    \\ \hline
+		5     & 51.9      & 4.90    \\ \hline
+		6     & 59.8      & 5.88    \\ \hline
+	\end{tabularx}
+\end{table}
+
+\subsubsection*{\underline{System III: Back}}
+\rowcolors{2}{white}{white}
+\begin{table}[H]
+	\setlength{\extrarowheight}{2pt}
+	\centering
+	\begin{tabularx}{\textwidth}{|X|X|}
+		\hline
+		Length to $F_T$ (cm) & 15.3  \\ \hline
+		Length to $W_1$ (cm) & 40.0  \\ \hline
+		Length to $W_2$ (cm) & 77.5  \\ \hline
+		Mass$_{1}$ (kg)      & 0.983 \\ \hline
+		$W_1$ (N)            & 9.63  \\ \hline
+	\end{tabularx}
+\end{table}
+
+\rowcolors{2}{gray!15}{white}
+\begin{table}[H]
+	\setlength{\extrarowheight}{2pt}
+	\centering
+	\begin{tabularx}{\textwidth}{|X|X|X|X|X|}
+		\rowcolor{gray!50}
+		\hline
+		Trial & $F_T$ (lb) & $F_T$ (N) & $m_2$ (kg) & $W_2$ (N) \\ \hline
+		1     & 44.5       & 198       & 2.96       & 29.0      \\ \hline
+		2     & 38.9       & 173       & 2.11       & 20.6      \\ \hline
+		3     & 35.5       & 158       & 1.81       & 17.7      \\ \hline
+		4     & 31.0       & 138       & 1.41       & 13.8      \\ \hline
+		5     & 29.9       & 133       & 1.21       & 11.8      \\ \hline
+		6     & 26.0       & 116       & 0.956      & 9.36      \\ \hline
+	\end{tabularx}
+\end{table}
+
+\section*{Data Analysis}
+\subsubsection*{\underline{System I: Triceps}}
+\begin{figure}[H]
+	\caption*{Diagram for Triceps System}
+	\centering
+	\includegraphics[width=.65\textwidth]{tricep_diagram.png}
+\end{figure}
+
+\[ \sum \vec{\tau} = - l_T F_T - l_g F_g + l_FF = 0 \]
+\[ F = \frac{l_T}{l_F} F_T + \frac{l_g}{l_F} Fg \]
+Theoretical mechanical advantage:
+\[ \frac{l_T}{l_F} = \frac{4.00 \text{ cm} }{38.3 \text{ cm} } = .104 \]
+
+
+\begin{figure}[H]
+	\caption*{Triceps, Force vs. Force of Tension}
+	\includegraphics[width=\textwidth]{triceps.png}
+\end{figure}
+
+Experimental mechanical advantage (slope)$=0.0884$
+
+\[ \text{\% Error} = \frac{\left( 0.0884 - 0.104 \right)}{0.104} \times 100\% = -15.0 \% \]
+
+\subsubsection*{\underline{System II: Biceps}}
+
+\begin{figure}[H]
+	\caption*{Diagram for Biceps System}
+	\centering
+	\includegraphics[width=.65\textwidth]{bicep_diagram.png}
+\end{figure}
+
+\[ \sum \vec{\tau} =  l_TF_T - l_gF_g - l_FF = 0\]
+\[ F = \frac{l_T}{l_F} F_T - \frac{l_g}{l_F} F_g \]
+
+Theoretical mechanical advantage:
+\[ \frac{l_T}{l_F} = \frac{5.50 \text{ cm} }{36.8 \text{ cm} } = 0.149\]
+
+\begin{figure}[H]
+	\caption*{Biceps, Force vs. Force of Tension}
+	\includegraphics[width=\textwidth]{biceps.png}
+\end{figure}
+
+Experimental mechanical advantage (slope)$=0.143$
+
+\[ \text{\% Error} = \frac{0.143-0.149}{0.149} \times 100 \% = -4.03 \% \]
+
+\subsubsection*{\underline{System III: Back}}
+
+\begin{figure}[H]
+	\caption*{Diagram for Back System}
+	\centering
+	\includegraphics[width=.65\textwidth]{back_diagram.png}
+\end{figure}
+
+\[ \sum \vec{\tau} = l_TF_T - l_1W_1 - l_2W_2 = 0 \]
+\[ W_2 = \frac{l_T}{l_2} F_T - \frac{l_1}{l_2} W_1 \]
+
+Theoretical mechanical advantage:
+\[ \frac{l_T}{l_2} = \frac{15.3 \text{ cm} }{77.5 \text{ cm} } = 0.197  \]
+
+\begin{figure}[H]
+	\caption*{Back, Weight$_{2}$ vs. Force of Tension}
+	\includegraphics[width=\textwidth]{back.png}
+\end{figure}
+
+Experimental mechanical advantage (slope)$=0.236$
+
+\[ \text{\% Error} = \frac{0.236 - 0.197}{0.197} \times 100 \% = 19.8\%\]
+
+\section*{Conclusion}
+
+In the end our group could only conclude that our calculations for the mechanical advantage and torques in the second system (biceps) accurately represented the actual mechanical advantage in the system. In the biceps system, we had a relatively low ($-4.03\%$) percent error, allowing us to make this conclusion.
+
+However, in both the triceps and back systems, we had relatively large percent errors ($-15.0\%$ and $19.8\%$, respectively). Leading us to believe that our measurements and calculations did not accurately represent the actual mechanical advantages and torques in those systems.
+
+At the very least, this experiment allowed us to successfully simulate the actual biceps system within our bodies and better understand the forces, torques, and mechanical advantages that take place within us.
+
+There were some notable parts of our procedure that could have contributed to the large error percentages in our triceps and back systems.
+
+In the triceps system, we used a turnbuckle to measure the force of tension on the system, but this turnbuckle is relatively imprecise. Our group could have easily misjudged the scale by some mm which could have caused hundreds of grams of discrepancies when we converted the turnbuckle kg to N.
+
+In the backs system, we chose forces of tensions that had relatively small changes between trials. Our forces of tension ranged from 116N to 198N. If we chose a larger range of forces, we could have had a better representation of the true linear relationship between the force of tension and the second weight force in that system.
+\end{document}

@@ -1,0 +1,224 @@
+\documentclass[fleqn]{article}
+\setlength{\parskip}{\baselineskip}%
+\setlength{\parindent}{0pt}%
+
+\usepackage[table]{xcolor}
+\usepackage{siunitx}
+\usepackage{tabularx}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{caption}
+
+\title{Moment of Inertia Lab Report}
+\author{Lawjay Lee}
+\date{}
+
+\begin{document}
+\setlength{\mathindent}{0pt}
+\maketitle
+
+\section*{Lab Partners:}
+\begin{itemize}
+	\item Raphael H.
+	\item Ishmum N.
+	\item Wyatt S.
+\end{itemize}
+
+\section*{Introduction}
+In this lab, our group wanted to calculate the moment of inertia for different symmetrical objects. Additionally, to calculate these moments of intertias, we used Newton's Second Law of Motion. Another goal of the experiment is to verify that Newton's Second Law of Motion could be applied to rotating objects to determine rotational inertia.
+
+Finally, we were given the theoretical moment of inertias for the objects given their mass and radius:
+\[ I _{\text{disk} } =\frac{1}{2} MR^2 \]
+\[ I _{\text{beam} } = \frac{1}{12} ML^2 \]
+\[ I _{\text{point mass} } = MR^2 \]
+
+Our group also wanted to verify that our calculated moment of inertias from our experiments matched with these theoretical moment of intertias.
+
+\section*{Raw Data}
+\begin{table}[H]
+	\centering
+	\setlength{\extrarowheight}{2pt}
+	\begin{tabularx}{\textwidth}{|X|X|}
+		\hline
+		Mass of hanging object       & $2.00 \times 10^{-2}$ kg \\
+		\hline
+		Mass of both point particles & $5.50 \times 10^{-1}$ kg \\
+		\hline
+		Mass of beam                 & $5.96 \times 10^{-1}$ kg \\
+		\hline
+		Mass of disk                 & $1.61$ kg                \\
+		\hline
+		Radius of middle rung        & $1.33 \times 10^{-2}$ m  \\
+		\hline
+		Length of beam               & $4.80 \times 10^{-1}$ m  \\
+		\hline
+		Radius of disk               & $1.15 \times 10^{-1}$ m  \\
+		\hline
+	\end{tabularx}
+\end{table}
+
+
+
+
+\begin{figure}[H]
+	\caption*{Angular Velocity vs. Time of Pulley by Itself}
+	\includegraphics[width=\textwidth]{pulley.png}
+\end{figure}
+
+
+\begin{figure}[H]
+	\caption*{Angular Velocity vs. Time of Disk}
+	\includegraphics[width=\textwidth]{disk.png}
+\end{figure}
+
+\begin{figure}[H]
+	\caption*{Angular Velocity vs. Time of Point Particles 3cm Apart}
+	\includegraphics[width=\textwidth]{3cm.png}
+\end{figure}
+
+\begin{figure}[H]
+	\caption*{Angular Velocity vs. Time of Point Particles 6cm Apart}
+	\includegraphics[width=\textwidth]{6cm.png}
+\end{figure}
+
+\begin{figure}[H]
+	\caption*{Angular Velocity vs. Time of Point Particles 9cm Apart}
+	\includegraphics[width=\textwidth]{9cm.png}
+\end{figure}
+
+\begin{figure}[H]
+	\caption*{Angular Velocity vs. Time of Point Particles 12cm Apart}
+	\includegraphics[width=\textwidth]{12cm.png}
+\end{figure}
+
+\begin{figure}[H]
+	\caption*{Angular Velocity vs. Time of Point Particles 15cm Apart}
+	\includegraphics[width=\textwidth]{15cm.png}
+\end{figure}
+
+\section*{Data Analysis}
+
+\begin{figure}[H]
+	\subsubsection*{Experiment Setup}
+	\includegraphics[width=.5\textwidth]{setup.png}
+\end{figure}
+
+\subsection*{\underline{Experimental Moment of Inertias}}
+
+\begin{figure}[H]
+	\subsubsection*{FBD, Hanging Mass}
+	\includegraphics[width=.07\textwidth]{fbd.png}
+\end{figure}
+
+\[ \sum \vec{F} = F_T-m_hg=m_h(- a ) \text{, a is (-) because mass is falling down}  \]
+\[ F_T=m_h(g- a) \]
+
+\begin{figure}[H]
+	\subsubsection*{Torque Diagram}
+	\includegraphics[width=.2\textwidth]{torque.png}
+\end{figure}
+
+\[ \sum \vec{\tau} =I \vec{\alpha} =r F_T\]
+\[ F_T=m_h(g- a) \]
+\[ I \alpha =r m_h(g- a) \]
+\[ a = r \alpha \]
+\[ I \alpha = rm_h \left( g-r \alpha \right) \]
+\[ I _{\text{exp} } = \frac{rm_h \left( g-r \alpha \right)}{\alpha}  \]
+
+Using equation for $I _{\text{exp} } $:
+\[ I _{\text{exp} } = \frac{rm_h \left( g-r \alpha \right)}{\alpha}  \]
+
+Using $\alpha$ from the slope of the Angular Velocity vs. Time for Disk:
+\[ I _{\text{expDisk} } =\frac{\left( .0133 \text{ m}  \right)
+		\left( .0200 \text{ kg}  \right)
+		\left( 9.8 \text{ m/s$^2$} -
+		\left( .0133 \text{ m}  \right)
+		\left(.232 \text{ rad/s$^2$}  \right)
+		\right)
+	}{.232 \text{ rad/s$^2$} }  \]
+\[ I _{\text{expDisk} } = 1.12 \times 10^{-2} \text{ kg$\cdot$m$^2$}  \]
+
+Rest found using same equation, excel, and $\alpha$ from slope of Angular Velocity vs. Time Graphs:
+\begin{table}[H]
+	\setlength{\extrarowheight}{2pt}
+	\begin{tabular}{|l|l|l|l|}
+		\hline
+		Trial       & Radius (cm) & $\alpha$ (rad/s$^2$) & $I_{\text{exp} } $ (kg$\cdot$m$^2$) \\ \hline
+		Pulley Only & 0.00        & 151                  & $1.37 \times 10^{-5}$               \\ \hline
+		3 cm apart  & 3.00        & 0.216                & $1.21 \times 10^{-2}$               \\ \hline
+		6 cm apart  & 6.00        & 0.191                & $1.36 \times 10^{-2}$               \\ \hline
+		9 cm apart  & 9.00        & 0.160                & $1.63 \times 10^{-2}$               \\ \hline
+		12 cm apart & 12.0        & 0.146                & $1.79 \times 10^{-2}$               \\ \hline
+		15 cm apart & 15.0        & 0.111                & $2.35 \times 10^{-2}$               \\ \hline
+		Disk Only   & 11.5        & 0.232                & $1.12 \times 10^{-2}$               \\ \hline
+	\end{tabular}
+\end{table}
+
+To get experimental $I$ for beam, we plotted the experimental moment of inertias of the point particles on an $I$ vs $R^2$ graph:
+
+\begin{figure}[H]
+	\includegraphics[width=\textwidth]{pp.png}
+\end{figure}
+
+The slope of the graph should represent experimental point particle masses (from $I _{\text{pp} } = mR^2$), so:
+\[ m _{\text{exp} } = 5.02 \times 10^{-1} \text{ kg}   \]
+
+The y-intercept should represent $I _{\text{beam} } + I _{\text{pulley} } $,
+so:
+\[\text{y-intercept} -I _{\text{pulley} } = I _{\text{exp\_beam} }  \]
+\[ \left(1.16 \times 10^{-2} \text{ kg$\cdot$m$^2$} \right)-
+	\left( 1.37 \times 10^{-5} \text{ kg$\cdot$m$^2$}   \right)
+	= 1.16 \times 10^{-2} \text{ kg$\cdot$m$^2$}
+\]
+\[ I _{\text{exp\_beam } } =  1.16 \times 10^{-2} \text{ kg$\cdot$m$^2$}
+\]
+
+\subsection*{\underline{Theoretical Moment of Inertias}}
+Assuming:
+\[ I _{\text{disk} } =\frac{1}{2} M _{\text{ disk} } R^2 \]
+\[ I _{\text{beam} } = \frac{1}{12} M _{\text{beam} } L^2 \]
+\[ I _{\text{point mass} } = M _{\text{pp} } R^2 \]
+
+\[ I _{\text{theo\_disk}} = \frac{1}{2} \left( 1.61 \text{ kg}  \right) \left( .115 \text{ m}  \right)^2=
+	1.06 \times 10^{-2} \text{ kg$\cdot$m$^2$}
+\]
+\[ I _{\text{theo\_beam } }  = \frac{1}{12} \left( .596 \text{ kg}  \right)
+	\left( .480 \text{ m}  \right)^2
+	= 1.14 \times 10^{-2} \text{ kg$\cdot$m$^2$}
+\]
+
+\subsection*{\underline{Percent Errors}}
+We're comparing theoretical interias and our experimental inertias for disk and beam. For the point particles, we're comparing the experimental mass with the actual mass of the point particles, so the mass in the theoretical column is the actual mass of the point particles.
+
+\[ \text{Using: \% Error}  = \frac{\text{theoretical} - \text{experimental} }{\text{experimental} } \times 100 \%  \]
+
+\begin{table}[H]
+	\setlength{\extrarowheight}{2pt}
+	\centering
+	\begin{tabularx}{\textwidth}{|X|X|X|X|}
+		\hline
+		                      & Theoretical          & Experimental         & \% Error   \\
+		\hline
+		$m _{\text{pp} } $    & .550 kg              & .502 kg              & 9.60\%     \\
+		\hline
+		$I _{\text{disk} }  $ & .0106 kg$\cdot$m$^2$ & .0112 kg$\cdot$m$^2$ & $-5.49 \%$ \\
+		\hline
+		$I _{\text{beam} }$   & .0114 kg$\cdot$m$^2$ & .0116 kg$\cdot$m$^2$ & $-1.52 \%$ \\
+		\hline
+	\end{tabularx}
+\end{table}
+
+\section*{Conclusion}
+In our data analysis, we found that the percent errors between the theoretical moment of inertias and the experimental moment of inertias for the disk and beam were significantly low ($<6\%$). We also found that the percent error between the experimental mass we calculated of the point particles and the actual mass of the point particles was also relatively low ($<10\%$).
+
+Based on these findings, we concluded that using Newton's Second Law of Motion and using the given theoretical formulas for moment of inertia could be applied to determine the moment of inertia for rotating cylindrical objects, beams, and point particles.
+
+Our percent errors of the moment of inertias for the disk and beam were significantly low, but the percent error between the actual mass and calculated mass was noticably higher than the other percent errors.
+
+During our experiment, we manually measured the radius of the point particles using a ruler. Due to the precision of the ruler and the human eye, this could have introduced some error when calculating the experimental moment of intertias for the point particles.
+
+Additionally, we assumed that our experiment had a no slip condition, allowing us to assume that $a=\alpha R$. Since we didn't directly test this assumption, it's unknown if the assumption could have contributed to some of our error.
+
+Finally, while the hanging mass was falling, the act of the rope unwinding did somewhat affect the angular acceleration that was measured by LabQuest. In our calculations, we assumed these small movements were negligible, and we only calculated the angular acceleration using points before the unwinding significantly affected the angular velocity, but they could have introduced some more error in our calculations.
+\end{document}

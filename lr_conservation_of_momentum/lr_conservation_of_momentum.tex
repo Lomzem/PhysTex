@@ -1,0 +1,167 @@
+\documentclass[fleqn]{article}
+\setlength{\parskip}{\baselineskip}%
+\setlength{\parindent}{0pt}%
+
+\usepackage[table]{xcolor}
+\usepackage{siunitx}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage{float}
+\usepackage{amsmath}
+
+\title{Impule and Momentum Lab Report}
+\author{Lawjay Lee}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section*{Lab Partners:}
+\begin{itemize}
+	\item Raphael H.
+	\item Ishmum N.
+	\item Wyatt S.
+\end{itemize}
+
+\section*{Introduction}
+In this lab, our group wanted to verify two things:
+\begin{itemize}
+	\item Momentum is conserved in elastic and inelastic collsions
+	\item Energy is conserved in elastic and inelastic collisions
+\end{itemize}
+
+To accomplish this, our group created collisions between two PASCO Smart Carts both with magnets to simulate elastic collsions and with velcro to simulate inelastic collisions.
+
+\section*{Raw Data}
+Note: in all trials, we launched Mass A (labeled Red Cart on graphs) with some velocity and began Mass B (labeled Blue Cart on graphs) at rest prior to the collisions.
+\begin{figure}[H]
+	\includegraphics[width=\linewidth]{trial_1_rawdata.png}
+	\\Trial 1: Position vs. Time in Elastic Collision of Two Masses with Same Mass
+\end{figure}
+
+\begin{figure}[H]
+	\includegraphics[width=\linewidth]{trial_2_rawdata.png}
+	\\Trial 2: Position vs. Time in Elastic Collision of Two Masses with Different Masses
+\end{figure}
+
+\begin{figure}[H]
+	\includegraphics[width=\linewidth]{trial_3_rawdata.png}
+	\\Trial 3: Position vs. Time in Inelastic Collision of Two Masses with Same Mass
+\end{figure}
+
+\begin{figure}[H]
+	\includegraphics[width=\linewidth]{trial_4_rawdata.png}
+	\\Trial 4: Position vs. Time in Inelastic Collision of Two Masses with Same Mass
+\end{figure}
+
+\section*{Data Analysis}
+Since the track is horizontal $U=0$, and since Mass B started at rest, the total momentum and total energy before the collision are:
+\[ \vec{p}_{o}=m_a \vec{v} _{ao}  \]
+\[ E _{\text{total} } = KE_o = \frac{1}{2} m_a \left( v _{ao}  \right)^2   \]
+
+The total momentum after the elastic collision is:
+\[ \vec{p}_{f}=m_a\vec{v} _{af}+m_b\vec{v} _{bf}    \]
+
+The total momentum after the inelastic collision is:
+\[ \vec{p}_{f}= \left( m_a+m_b \right)\vec{v} _f   \]
+
+The total energy after the collision is:
+\[ E _{\text{total} } = KE_f=\frac{1}{2} m_a \left( v _{af}  \right)^2 + \frac{1}{2} m_b \left( v _{bf}  \right)^2  \]
+\begin{table}[H]
+	\centering
+	\resizebox{\columnwidth}{!}{%
+		{\renewcommand{\arraystretch}{1.2}
+				\rowcolors{2}{gray!25}{white}
+				\begin{tabular}{|l|l|l|l|l|}
+					\rowcolor{gray!50}
+					\hline
+					                      & Trial 1 & Trial 2 & Trial 3 & Trial 4 \\ \hline
+					$m_{a}$ (kg)          & 0.268   & 0.520   & 0.268   & 0.520   \\ \hline
+					$m_{b}$ (kg)          & 0.268   & 0.268   & 0.268   & 0.268   \\ \hline
+					$v_{ao}$ (m/s)        & 0.737   & 0.564   & 0.656   & 0.559   \\ \hline
+					$v_{af}$ (m/s)        & -0.001  & 0.149   & 0.308   & 0.357   \\ \hline
+					$v_{bf}$ (m/s)        & 0.703   & 0.702   & 0.309   & 0.357   \\ \hline
+					$p_{o}$ (N $\cdot$ s) & 0.197   & 0.293   & 0.176   & 0.291   \\ \hline
+					$p_{f}$ (N $\cdot$ s) & 0.188   & 0.266   & 0.165   & 0.281   \\ \hline
+					$KE_{o}$ (J)          & 0.0727  & 0.0827  & 0.0576  & 0.0812  \\ \hline
+					$KE_{f}$ (J)          & 0.0663  & 0.0719  & 0.0255  & 0.0502  \\ \hline
+					\% Error $p$          & 4.65\%  & 9.85\%  & 6.05\%  & 3.25\%  \\ \hline
+					\% Error $KE$         & 9.29\%  & 14.04\% & 77.27\% & 47.18\% \\ \hline
+				\end{tabular}%
+			}
+	}
+
+\end{table}
+Since both initial and final momentums and energies were found experimentally, we weighted them the same in the Error \% Formula:
+\[ \% \text{ Error} = \frac{\left( \text{initial} - \text{final}  \right)}{\left( \text{initial} + \text{final}  \right)\div 2} \times 100\%   \]
+\section*{Conclusion}
+The low percent errors ($<10\%$) in all four of our trials suggest that, momentum appears to be conserved in both elastic and inelastic collisions.  Additionally, it doesn't seem to matter if the colliding objects have the same mass or not.
+
+However, we found that total energy in a system is only conserved for elastic collisions and not for inelastic collisions. The relatively low percent errors ($<15\%$) in the first two trials suggest that energy is mostly conserved in elastic collisions, and we only lost energy due to non-conservative forces such as friction, air resistance, etc. Again, mass difference doesn't seem to make a significant impact on energy conservation in elastic collisions.
+
+On the other hand, the significantly large percent errors in Trials 3 and 4 ($77.27\%$ and $47.18\%$, respectively) suggest that there was a large change in energy from before and after the inelastic collisions. The large difference in the percent errors between Trial 3 and Trial 4 could suggest that mass difference in the objects could play a role in energy conservation, however.
+
+Our group believes that the large percent errors in total energy in the inelastic collisions is due to how it takes energy to connect two objects together. Because the elastic collisions didn't require the objects to bind together, energy is better kept within the system.
+
+As mentioned earlier, non-conservative forces such as friction and air resistance could have contributed towards some of the error in our trials. To minimize friction, our group attempted to launch Mass A in all of the trials with greater speed, but it could have still played a role.
+
+Additionally, in the elastic collisions, we assumed that the magnets that repelled the two masses in the collision played a very insignicant role in the change in momentum and energy; however, we didn't conclude for certain that the magnets were negligible.
+\end{document}
+<<<<<<< HEAD
+=======
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> refs/remotes/origin/main
