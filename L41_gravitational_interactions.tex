@@ -1,0 +1,63 @@
+\documentclass[fleqn]{article}
+\setlength{\parskip}{\baselineskip}%
+\setlength{\parindent}{0pt}%
+
+\usepackage[table]{xcolor}
+\usepackage{siunitx}
+\usepackage{tabularx}
+\usepackage{float}
+\usepackage{amsmath}
+
+\begin{document}
+\setlength{\mathindent}{0pt}
+\section*{Gravitational Interactions}
+\[ \vec{F}_{G} = \frac{-Gm_1M-2}{r^2} \, \hat{r}    \]
+\[ \vec{F}_{G1} = \frac{Gm_1m_2}{r^2}  \, \hat{i}  \]
+Positive because $m_1$ is being pulled to the right by $m_2$
+\[ \vec{F}_{G2} = -\vec{F}_{G1}   \text{, Newton's 3rd Law}   \]
+
+When three masses:
+\[ \sum \vec{F}_{1} = + \vec{F}_{G1,2} + \vec{F}_{G1,3}       \]
+\[ = \frac{Gm_1m_2}{{r_1}^2} + \frac{Gm_1m_3}{(r_1+r_2)^2}  \]
+
+\[ \sum \vec{F}_{2} = -\vec{F}_{G2,1} + \vec{F}_{G2,3}       \]
+\[ = \frac{-Gm_2m_1}{r_1^2} + \frac{Gm_2m_3}{{r_2}^2}  \]
+
+When infinite masses:
+\[ dF_G = \frac{Gm_1dm}{r^2}  \]
+\[ F_G = \int_{a}^{a+l}{\frac{Gm_1dm}{r^2} }\]
+$a$ = first point mass, $l$ = final point mass
+
+\bigbreak
+Earth around Sun:
+\[ \sum _{E} \vec{F} = \frac{Gm_sm_E}{{R_E}^2} = m_Ea_c   \]
+\[ a_c=R_E \omega ^2 \]
+
+\underline{Important:}
+\[ \omega ^2 = \frac{Gm_s}{{R_E}^3}  \]
+
+\[ \sum _{\text{object} } \vec{F} = \vec{F}_{Go,s} + \vec{F}_{Go,E}     \]
+\[ \sum _{o} \vec{F} = \frac{-Gm_sm_o}{(R_E-d)^2} + \frac{Gm_Em_o}{d^2}  = -m_oa_c   \]
+Negative acceleration because it's towards the center of the circle
+\[ \frac{-Gm_s}{(R_E-d)^2} + \frac{Gm_E}{d^2} = - (R_E-d) \omega ^2 \]
+\[ \frac{-Gm_s}{(R_E-d)^2} + \frac{Gm_E}{d^2} = -(R_E-d) \frac{Gm_s}{{R_E}^3}  \]
+\[ \frac{-m_s}{(R_E-d)^2} + \frac{m_E}{d^2} = \frac{-(R_E-d)m_s}{{R_E}^3}  \]
+
+\[ \frac{1}{(R_E-d)^2}  = \frac{1}{{R_E}^2} \cdot \frac{1}{(1-\frac{d}{R_E} )^2}  \]
+
+Assumption:
+\[ \frac{d}{R_E} << 1 \]
+\[ \frac{1}{(1+x)^n} \approx 1-nx + O(x^2)\]
+\[ \frac{1}{(R_E-d)^2} \approx \frac{1}{{R_E}^2} (1-2(\frac{- d }{R_E} ))  \]
+\[ = \frac{1}{{R_E}^2} (1 + \frac{2d}{R_E} ) \]
+
+\[ \frac{-m_s}{{R_E}^2} \left[ 1 + \frac{2d}{R_E}  \right]
++ \frac{m_E}{d^2} =
+\frac{-(R_E-d)m_s}{{R_E}^3} \]
+
+First $\frac{m_s}{{R_E}^2} $ cancels with $\frac{-(R_E)m_s}{{R_E}^3} $ after distribution
+
+\[ \frac{-2m_sd}{{R_E}^3} + \frac{m_E}{d^2} = \frac{m_sd}{{R_E}^3}  \]
+\[ \frac{m_E}{d^2} = \frac{3m_sd}{{R_E}^3}  \]
+\[ d = \left( \frac{1}{3} \frac{m_E}{m_s}  \right)^{\frac{1}{3} }R_E \]
+\end{document}
