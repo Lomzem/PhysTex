@@ -1,0 +1,43 @@
+\documentclass[fleqn]{article}
+\setlength{\parskip}{\baselineskip}%
+\setlength{\parindent}{0pt}%
+
+\usepackage[table]{xcolor}
+\usepackage{siunitx}
+\usepackage{tabularx}
+\usepackage{float}
+\usepackage{amsmath}
+
+\begin{document}
+\setlength{\mathindent}{0pt}
+\section*{Gravitational Energy}
+\[ \Delta U_G = -W_G \]
+\[ \vec{F}_{G} = - \frac{Gm_1m_2}{r^2} \hat{r}   \]
+\[ W_G = \int{\vec{F}_{G}  } \cdot d \vec{r}  \]
+\[ W_G = \int{\frac{-Gm_1m_2}{r^2} \hat{r} } \cdot dr \, \hat{r} \]
+\[ W_G = \int{- \frac{Gm_1m_2}{r^2} }\ dr \]
+\[ W_G = -Gm_1m_2 \int{\frac{dr}{r^2} }\ dx \]
+\[ W_G = -Gm_1m_2 \left( \frac{-1}{r}  \right) \]
+\[ W_G = Gm_1m_2 \left( \frac{1}{r}  \right) \]
+\[ \Delta U_G = \frac{-Gm_1m_2}{r}  \]
+
+\underline{Important}
+\[ U_G = \frac{-Gm_1m_2}{r} + U_0 \]
+\[ U_0 \text{ is like + C}  \]
+\[ U_0 \text{ is 0 at } r = \infty  \]
+
+Earth going around sun:
+\[ E_{tot} = KE + U_G \]
+\[ E_{tot} = \frac{1}{2} m_Ev^2 + \frac{-Gm_sm_E}{R}  \]
+
+\[ \sum \vec{F} = F_G = ma_c \]
+\[ \frac{Gm_sm_E}{R^2} = m_E \frac{v^2}{R}  \]
+\[ v^2 = \frac{Gm_s}{R}  \]
+\[ E_{tot} = \frac{1}{2} m_E \left[ \frac{Gm_s}{R}  \right] - \frac{Gm_sm_E}{R}  \]
+\[ E_{tot} = - \frac{1}{2} \frac{Gm_Em_s}{R}  \]
+
+\[ E_A = \frac{1}{2} m_o {v _{esc} }^2 - \frac{Gm_Em_o}{R_E} = 0 \]
+\[ E_B = 0 + 0 \]
+\[ c = v _{esc} = \sqrt{\frac{2Gm_E}{R_E}}  \]
+
+\end{document}
