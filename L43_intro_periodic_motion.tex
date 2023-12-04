@@ -1,0 +1,57 @@
+\documentclass[fleqn]{article}
+\setlength{\parskip}{\baselineskip}%
+\setlength{\parindent}{0pt}%
+
+\usepackage[table]{xcolor}
+\usepackage{siunitx}
+\usepackage{tabularx}
+\usepackage{float}
+\usepackage{amsmath}
+
+\begin{document}
+\setlength{\mathindent}{0pt}
+\section*{Introduction to Periodic Motion}
+\[ \boxed {\omega = \frac{2 \pi}{T}  }\]
+Assume no "extra forces"
+\[ F_f = 0 \]
+\[ F_A = 0 \]
+
+\[ \sum \vec{F} = \vec{F}_{S} = m \vec{a}     \]
+\[\boxed{ -k \Delta \vec{x} = m \vec{a}  } \]
+\[ \boxed {\vec{a} = - \frac{k}{m} \Delta \vec{x} }  \]
+Cannot use kinematic eqns, $\vec{a} \ne$ constant
+
+\[ \vec{a} = \frac{d^2 \vec{x} }{dt^2}  \]
+\[ -k \Delta \vec{x} = m \frac{d^2 \vec{x} }{dt^2}  \]
+
+Gives back original fxn with (-) after 2 derivatives:
+\[ x(t) = A \sin \left( \omega t \right) \]
+\[ x(t) = A \cos \left( \omega t \right) \]
+\[ \frac{dx}{dt} = A \omega \cos \left( \omega t \right) \]
+\[ \frac{d^2x}{dt^2} = A \omega - \sin \left( \omega t \right) \omega  \]
+\[ \frac{d^2x}{dt^2} = -A \omega ^2 \sin \left( \omega t \right)\]
+
+\[ -k \Delta x = m \frac{d^2x}{dt^2}  \]
+\[ -k \left[ A \sin \left( \omega t \right) \right] = m \left[ -A \omega ^2 \sin \left( wt \right) \right]\]
+\[ \boxed {k = m \omega ^2 }\]
+\[ \boxed {\omega = \sqrt{\frac{k}{m} } = \frac{2 \pi}{T} } \]
+
+Spring system, max $\Delta x$, $t=0$, $v=0$
+\[ x(t) = A \sin \left( \omega t \right) \]
+\[ x(0) = x_{\text{max} } = A \sin \left( \omega \cdot 0 \right) \]
+\[ x_{\text{max} } = 0  \text{, doesn't make sense for $\sin$!} \]
+\[ x(t) = A \cos \left( \omega t \right) \]
+\[ x(0) = x_{\text{max} } = A \cos \left( \omega \cdot 0 \right) \]
+\[ x_{\text{max} } = A  \text{, does make sense for $\cos$!} \]
+
+Spring system, equilibrium, $v \ne 0$, $t=0$, $x=0$
+\[ x(t) = A \sin \left( \omega t \right) \]
+\[ x(0) = A \sin \left( 0 \right) \]
+\[ 0 = 0 \]
+
+Spring system, some amplitude but not full, $\frac{A}{2}$
+\[ \boxed {x(t) = A \sin \left( \omega t + \phi \right) }\text{, $\phi$ is a phase shift}  \]
+\[ x(0) = \frac{A}{2} = A \sin \left( \omega  \cdot 0 + \phi \right) \]
+\[ \frac{1}{2} = \sin \left( \phi \right) \]
+\[ \phi = \frac{\pi}{6} \text{ rad}  \]
+\end{document}
