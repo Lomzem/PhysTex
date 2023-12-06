@@ -1,0 +1,39 @@
+\documentclass[fleqn]{article}
+\setlength{\parskip}{\baselineskip}%
+\setlength{\parindent}{0pt}%
+
+\usepackage[table]{xcolor}
+\usepackage{siunitx}
+\usepackage{tabularx}
+\usepackage{float}
+\usepackage{amsmath}
+
+\begin{document}
+\setlength{\mathindent}{0pt}
+\section*{Examples of Periodic Motion}
+\[ \boxed {x(t) = A \sin \left( \omega t + \phi \right) } \]
+
+A: amplitude: $\Delta x _{\text{max} } $
+
+$\omega$: angular velocity: $\omega = \frac{2 \pi}{T} = \sqrt{\frac{k}{m} } = 2 \pi f$
+
+$\phi$: phase shift: $\Delta x(t=0) = x_0 = A \sin \phi$
+
+When $\Delta x=A$, $\phi = \frac{\pi}{2} $
+
+When $\Delta x=0$, $\phi = 0, \pi$
+
+Should be $\phi = \pi$ because negative motion
+
+\[ v=A \omega \cos \left( \omega t + \phi \right) \]
+\[ a = A \omega ^2 \left[ - \sin \left( \omega t + \phi \right) \right] \]
+
+\[ v _{\text{max} } = A \omega (1) \]
+\[ a _{\text{max} } = A \omega ^2 (1) \]
+
+\[ E _{\text{tot} } = \frac{1}{2} mv^2 + \frac{1}{2} k \Delta x ^2 \]
+\[ = \frac{1}{2} m \left[ A \omega \cos \left( \omega t + \phi \right) \right]^2 + \frac{1}{2} k \left[ A \sin \left( \omega t + \phi \right) \right]^2 \]
+\[ \frac{1}{2} A^2 \left[ m \omega ^2 \cos ^2 \left( \omega t + \phi \right) + k \sin ^2 \left( \omega t + \phi \right) \right] \]
+$E=$constant IF $m \omega ^2=k$, true
+\[ \boxed{E _{\text{tot} }= \frac{1}{2} kA^2 = \frac{1}{2} m \omega ^2 A^2 = \frac{1}{2} m \left( v _{\text{ max} }  \right)^2} \]
+\end{document}
