@@ -1,0 +1,201 @@
+\documentclass[fleqn]{article}
+\setlength{\parskip}{\baselineskip}%
+\setlength{\parindent}{0pt}%
+
+\usepackage[table]{xcolor}
+\usepackage{siunitx}
+\usepackage{tabularx}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{caption}
+
+\title{Oscillations, Simple Harmonic Motion Lab Report}
+\author{Lawjay Lee}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section*{Lab Partners:}
+\begin{itemize}
+	\item Raphael H.
+	\item Wyatt S.
+\end{itemize}
+
+\section*{Introduction}
+In this lab, our group examined systems involving springs. First, we found the spring constant for a spring in class using a pulley system. Second, we used this spring constant value we found to verify the relationship:
+\[ \omega = \sqrt{\frac{k}{m} }  \]
+Finally, we found the value of b in the equation:
+\[ A = A_0e^{- \frac{bt}{2m} } \]
+
+\section*{Raw Data}
+\subsubsection*{\underline{Part 1}}
+\begin{table}[H]
+	\setlength{\extrarowheight}{2pt}
+	\begin{tabular}{|l|r|r|r|}
+		\hline
+		Trial & Mass (g) & $F_G$ (N) & Displacement (cm) \\ \hline
+		1     & 50       & 0.490     & 39.2              \\ \hline
+		2     & 150      & 1.470     & 40.8              \\ \hline
+		3     & 250      & 2.450     & 45.6              \\ \hline
+		4     & 350      & 3.430     & 50.9              \\ \hline
+		5     & 450      & 4.410     & 55.9              \\ \hline
+		6     & 550      & 5.390     & 61.0              \\ \hline
+		7     & 650      & 6.370     & 66.0              \\ \hline
+		8     & 750      & 7.350     & 71.0              \\ \hline
+		9     & 850      & 8.330     & 75.9              \\ \hline
+		10    & 950      & 9.310     & 83.3              \\ \hline
+	\end{tabular}
+\end{table}
+Mass represents mass of hanging object shown in Overview of Part 1 System later
+
+$ F_G \text{ found by converting mass to kg and multiplying by } 9.8 \text{ m/s$^2$}$
+
+Values found for the blue spring
+
+\subsubsection*{\underline{Part 2}}
+\begin{figure}[H]
+	\caption*{Position vs Time Cart only}
+	\includegraphics[width=\textwidth]{part2train.png}
+\end{figure}
+
+\begin{figure}[H]
+	\caption*{Position vs Time Cart with Weight}
+	\includegraphics[width=\textwidth]{part2trainweight.png}
+\end{figure}
+
+Adding weights to cart increased mass by $500.$ g
+\subsubsection*{\underline{Part 3}}
+
+\begin{table}[H]
+	\setlength{\extrarowheight}{2pt}
+	\begin{tabular}{|l|r|r|}
+		\hline
+		Trial & Time (s) & A (cm) \\ \hline
+		1     & 0.000    & 5.86   \\ \hline
+		2     & 0.500    & 5.78   \\ \hline
+		3     & 1.02     & 5.61   \\ \hline
+		4     & 1.54     & 5.44   \\ \hline
+		5     & 2.06     & 5.27   \\ \hline
+		6     & 2.58     & 5.12   \\ \hline
+		7     & 3.08     & 4.90   \\ \hline
+		8     & 3.60     & 4.84   \\ \hline
+		9     & 4.12     & 4.70   \\ \hline
+		10    & 4.64     & 4.57   \\ \hline
+	\end{tabular}
+\end{table}
+Note: Time and Amplitude values came from Position vs Time Cart only graph
+
+\section*{Data Analysis}
+\subsubsection*{\underline{Part 1}}
+
+\begin{figure}[H]
+	\caption*{Overview of Part 1 System}
+	\includegraphics[width=\textwidth]{part1overview.png}
+\end{figure}
+
+\[ \sum \vec{F} = F_G - F_S = ma = 0 \]
+\[ F_G = F_S = k \Delta x  \]
+
+Therefore, plotting $F_G$ vs $\Delta x$ would have a slope of $k$:
+
+\begin{figure}[H]
+	\caption*{Force of Gravity vs Displacement for Blue Spring}
+	\includegraphics[width=\textwidth]{fg_vs_blue.png}
+\end{figure}
+Based on graph, blue spring has a spring constant $\boxed{k=19.6 \frac{\text{N} }{\text{m} }}$
+
+\subsubsection*{\underline{Part 2}}
+
+\begin{figure}[H]
+	\caption*{Overview of Part 2 System}
+	\centering
+	\includegraphics[width=0.5\textwidth]{part2overview.png}
+\end{figure}
+
+\begin{table}[H]
+	\setlength{\extrarowheight}{2pt}
+	\begin{tabular}{|l|r|r|}
+		\hline
+		Trial                  & 1     & 2     \\ \hline
+		First Peak Time (s)    & 2.28  & 3.50  \\ \hline
+		nth Peak Time (s)      & 6.92  & 12.3  \\ \hline
+		Avg Period (s)         & 0.516 & 0.880 \\ \hline
+		Omega (rad/s)          & 12.2  & 7.14  \\ \hline
+		k\_effective (N/m)     & 39.2  & 39.2  \\ \hline
+		Experimental Mass (kg) & 0.264 & 0.769 \\ \hline
+	\end{tabular}
+\end{table}
+
+For Trial 1, we used the point on the graph for the ninth peak. To find the average period for Trial 1, we did:
+\[ \frac{(\text{nth peak time} ) - (\text{first peak time} )}{9} \]
+This mass in Trial 1 is only the cart.
+
+For Trial 2, we used the point on the graph for the tenth peak. To find the average period for Trial 2, we did:
+\[ \frac{(\text{nth peak time} ) - (\text{first peak time} )}{10} \]
+The mass in Trial 2 is the cart plus 500 grams.
+
+Got values for Omega using:
+\[\text{angular velocity}=\omega =\frac{2 \pi}{\text{avg period} }\]
+
+\[ \sum \vec{F} = -k_1 \Delta x - k_2 \Delta x \]
+\[ = - \left( k_1 + k_2 \right) \Delta x \]
+\[ = - k _{\text{eff} } \Delta x = ma  \]
+\[ \Delta x = A \sin \left( \omega t + \phi \right) \]
+
+\[ \omega = \frac{2 \pi}{T} = \sqrt{\frac{k _{\text{eff} } }{m} }  \]
+
+Got values for experimental mass using:
+\[ m = \frac{k _{\text{eff} } }{\omega ^2}  \]
+and assuming that $k _{\text{effective} } = 2k$, since we used the same color spring twice.
+
+\begin{table}[H]
+	\setlength{\extrarowheight}{2pt}
+	\begin{tabular}{|l|l|r|}
+		\hline
+		Experimental Mass (kg) & Real Mass (kg) & \% Error \\ \hline
+		0.264                  & 0.244          & 8.07\%   \\ \hline
+		0.769                  & 0.744          & 3.29\%   \\ \hline
+	\end{tabular}
+\end{table}
+Percent Error found using:
+\[ \frac{\text{experimental - real} }{\text{real} } \times 100 \% \]
+
+\subsubsection*{\underline{Part 3}}
+\begin{figure}[H]
+	\caption*{Amplitude vs Time from Cart Only System}
+	\includegraphics[width=\textwidth]{amplitude_vs_time.png}
+\end{figure}
+Given the equation:
+\[ A(t) = A_0e^{- \frac{b}{2m} t} \]
+the $\frac{b}{2m} $ represents the C value in our auto fit.
+
+Therefore,
+\[ b = (2m)(\text{C value} ) \]
+Mass of cart = $0.244$ kg
+\[ b = 2(0.244 \text{ kg} )(0.0486) \]
+\[ \boxed{b = 2.37 \times 10^{-2} \,\frac{\text{kg} }{\text{s} } } \]
+b-value units not confirmed
+
+\section*{Conclusion}
+In the first part of our experiment, we successfully found the spring constant for the spring we were observing. We found that our spring's constant was:
+\[ k = 19.6 \frac{\text{N} }{\text{m} }  \]
+which is relatively accurate to the manufacturer's prediction of $20 \frac{\text{N} }{\text{m} } \pm 5 \% $.
+
+In the second part of our experiment, we successfully verified that the relationship:
+\[ \omega  = \sqrt{\frac{k}{m} } = \frac{2 \pi}{T}  \]
+held true for our spring system. By using our calculated spring constant and the average period of the spring, we found an experimental calculated mass that we could compare to the actual mass we were using.
+
+First, we used a system involving only the cart, which had a percent error of $8.07\%$. Then, we added 500 grams to the cart and recalculated the new experimental mass, which gave us a percent error of $3.29\%$ from the real mass.
+
+Finally, we were tasked to find the value of b in the equation:
+\[ A(T) = A_0 e ^{- \frac{b}{2m} t} \]
+We found the b-value for our Cart Only System to be $2.37 \times 10 ^{-2} \, \frac{\text{kg} }{s} $. However, since the b value is found in the exponent of the equation, we can't confirm the units of it.
+
+In Part 1 of our experiment, our group decided to manually measure the displacement of the cart using the ruler along the cart's track. However, we also had the option of measuring displacement using the PASCO App on our laptop. The PASCO App could have provided more precision to our measurements that could have been lacking in the ruler to decrease the error in our k-value.
+
+In Part 2 of our experiment, we did not recalculate the spring constant for the second blue spring we used. We assumed that since they were manufactured to have the same spring constant, both blue springs should have relatively close spring constants. However, using that assumption could have introduced some error in our calculations. If the springs did have different spring constants, our $k _{\text{effective} } $ value would have been different, and we would have had different values.
+
+Moreover, in all of our spring systems, we assumed that non-conservative forces such as friction did not significantly change the sum of the forces in our systems. However, since we did not directly measure friction, we can't conclude with certainty that friction was negligible.
+\end{document}
