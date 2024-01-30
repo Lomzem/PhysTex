@@ -1,0 +1,31 @@
+// #show math.equation: set text(14pt)
+= Electric Charge
+q = electric charge, that which creates electric force of attraction or repulsion
+\
+Unit = 1 coulomb or 1 C
+
+$display(|arrow(F)_"electric"| = frac(k|q_1||q_2|, r^2))$
+
+$arrow(F)_"electric"$ is conservative
+\
+\
+= Electric Fields
+\
+Units: N/C
+
+$display(arrow(E) = frac(k q, r^2) = F / q)$
+\ \
+Uniform $arrow(E)$ fields:
+    - All lines parallel
+    - $|arrow(E)|$ is same everywhere
+\
+= Line Charge
+$lambda =$ linear charge density
+$display(lambda = q / L = frac(d q, d L))$
+
+Horizontal Line Charge:
+\
+$display(E_x = 0)$ \
+$display(E_y = frac(k lambda L, y sqrt(L^2 / 4 + y^2))
+= frac(k q, y sqrt(L^2 / 4 + y^2)))
+$
