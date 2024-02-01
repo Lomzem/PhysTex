@@ -1,0 +1,9 @@
+= Gauss' Law
+\
+$display(
+Iota _E = arrow(E) dot arrow(a) = E A cos theta
+)$
+\
+$display(
+Iota = integral arrow(E) dot d arrow(A)
+)$
