@@ -16,49 +16,126 @@ Lawjay Lee
 
 Lab Partners:
 \begin{itemize}
-    \item Aaron W.
-    \item Wyatt S.
-    \item Abram J.
+	\item Aaron W.
+	\item Wyatt S.
+	\item Abram J.
 \end{itemize}
 Lab: Charge of the Electron
-Course:
-Section:
-Date:
+
+Course: PHYS-42
+
+Section: M1069
+
+Date: 2024-02-02
 
 \section*{Significant Numerical Results}
+\subsection*{Part 1}
+\[ e = 1.362 \times 10^{-19} \text{ C/electron} \]
+\[ \% \text{ Error e} = -14.98 \% \]
+
+\subsection*{Part 2}
+\[ R = 141 \text{ pm}\]
+\[
+	\% \text{ Error R} = 10.2 \%
+\]
+
+\section*{Conclusion/Questions}
+Our results for Part 1 differ from the accepted value by nearly 15\%. While this is larger than our goal of $<$10\% error, some sources of error I will discuss later could suggest that our results still validate the actual value for the charge of the electron despite having a large percent error.
+
+Our results for Part 2 are just slightly above 10\% of the accepted values. Taking into account the sources of error in our experiment, I believe our results still validate the expected value for the radius of the Cu atom.
+
+The main source of error in our results and calculations is likely an inaccuracy in the change in mass of the cathode. According to our procedure, following the 40 minute bath in the copper sulfate solution, we were to clean the electrodes with distilled water and dry them using a blow dryer.
+
+We performed this step, but there may have been a chance that I didn't dry the electrode long enough to completely remove all water molecules on the surface as I thought I did.
+
+This excess of water molecules may have created a larger final mass reading, which would cause our calculations involving the change in mass to be less accurate. Had our change in mass been smaller, we would have had a smaller percent error with the actual value for e.
+
+Besides the issue with the drying, another possible source of error in our experiment could have been the imprecision of our measuring devices; to measure the length and width of the cathode for the Part 2 calculations, we used a ruler, which was limited to 3 significant figures of precision. Because of this, our results for Part 2 were one significant figure less precise than our Part 1 results.
+
+\section*{Raw Data}
 \[ m_{a0}=10.9515 \text{ g} \]
 \[ m _{b0}=8.6868 \text{ g}  \]
 \[ m _{af} =11.4487 \text{ g}  \]
 \[m _{bf} = 8.1941 \text{ g}\]
 \[ It = Q= 1283.3 \text{ C} \]
-\[ \text{Length}=4.800 \text{ cm}\]
-\[\text{Width} = 2.250 \text{ cm}\]
+\[ \text{Length}=4.80 \text{ cm}\]
+\[\text{Width} = 2.25 \text{ cm}\]
 
 \section*{Part 1 Calculations}
+\subsubsection*{Change in cathode mass}
 \[ \text{Cathode } \Delta m = 11.4487 \text{ g} - 10.9515 \text{ g} \]
-\[= 4.972 \times 10^{-4} \text{ kg} \]
+\[\boxed{\Delta m = 4.972 \times 10^{-4} \text{ kg} }\]
 
+\subsubsection*{Number ions}
+\[ N = \frac{\Delta m}{M} N_A
+	= \frac{4.972 \times 10^{-4} \text{ kg}}{63.54 \times 10^{-3} \text{ kg/mol}}(6.022 \times 10^{23} \text{ mol}^{-1})
+\]
+\[ \boxed{N = 4.712 \times 10^{21} \text{ ions}} \]
+
+\subsubsection*{Charge of electron}
 \[ e = \frac{QM}{2 \Delta m N_A} \]
 \[ e = \frac{(1283.3 \text{ C})(6.354 \times 10^{-2} \text{ kg/mol})}{2(4.972 \times 10^{-4} \text{ kg})
-(6.022 \times 10^{23} \text{ mol}^{-1})
-}\]
-\[ e= 1.362 \times 10^{-19} \text{ C/electron}\]
+		(6.022 \times 10^{23} \text{ mol}^{-1})
+	}\]
+\[\boxed{ e= 1.362 \times 10^{-19} \text{ C/electron}}\]
 
+\subsubsection*{Error percentage of electron charge}
 Actual e = $1.602 \times 10^{-19}$ C/electron
-\[ \text{Error Percentage e}=\frac{(1.362 \times 10^{-19}) - (1.602 \times 10^{-19})}{1.602 \times 10^{-19}} \times 100 \% = -14.98\%\]
+\[ \text{Error Percentage e}=\frac{(1.362 \times 10^{-19}) - (1.602 \times 10^{-19})}{1.602 \times 10^{-19}} \times 100 \% = \boxed{-14.98\%}\]
 
 \section*{Part 2 Calculations}
-\[ \text{Area}=LW=(4.800 \text{ cm})(2.250 \text{ cm})=10.80 \text{ cm}^2 \]
+\subsubsection*{Area}
+\[ \text{Area}=LW=(4.80 \text{ cm})(2.25 \text{ cm})=10.8 \text{ cm}^2 \cdot \left( \frac{1 \text{ m}}{100 \text{ cm}} \right)^2\]
+\[= \boxed{ 1.08 \times 10^{-3} \text{ m}^2 }\]
+
+\subsubsection*{Thickness d}
 \[ \rho _{Cu} = \frac{\Delta m}{Ad} \]
 \[ d = \frac{\Delta m}{A \rho _{Cu} } \]
 
-Assuming $\rho _{Cu}  =8.92$ g/cm$^3$
-\[ d = 
-\frac{4.972 \times 10^{-1} \text{ g} }
-{
-    (10.80 \text{ cm}^2)
-    (8.92 \text{g/cm}^3)
-    }
+Assuming $\rho _{Cu}  =8.92$ g/cm$^3
+	\cdot \frac{1 \text{ kg}}{10^3 \text{ g}}
+	\cdot \left( \frac{100 \text{ cm}}{1 \text{ m}} \right)^3 = 8.92 \times 10^{3} \text{ kg/m}^3
+$
+\[ d =
+	\frac{4.972 \times 10^{-4} \text{ kg} }
+	{
+		(1.08 \times 10^{-3} \text{ m}^2)
+		(8.92 \times 10^{3} \text{ kg/m}^3)
+	}
 \]
-\[ d=5.16 \times 10^{-3} cm \]
+\[ \boxed{d=5.16 \times 10^{-5} \text{ m}} \]
+
+\subsubsection*{Total Volume}
+\[ V  = Ad = (1.08 \times 10^{-3} \text{ m}^2)(5.16 \times 10^{-5} \text{ m})  \]
+\[ \boxed{V = 5.57 \times 10^{-8} \text{ m}^3  }\]
+
+\subsubsection*{Volume per Cu atom}
+\[ V_{\text{Cu}} = \frac{V}{N} =
+	\frac{5.57 \times 10^{-8} \text{ m}^3}
+	{4.712 \times 10^{21} \text{ atoms}}
+\]
+\[ \boxed{V _{\text{Cu}} = 1.18 \times 10^{-29} \text{ m}^3  }\]
+
+\subsubsection*{Radius per Cu atom}
+\[ V _{\text{Cu}} = \frac{4}{3} \pi R^3  \]
+\[ R = \sqrt[3]{\frac{
+			{3 V _{\text{Cu} }}}
+		{4 \pi}
+	}
+	= \sqrt[3]{
+		\frac{3(1.18 \times 10^{-29} \text{ m}^3)}
+		{4 \pi}
+	}
+\]
+\[ {R = 1.41 \times 10^{-10} \text{ m}} \cdot
+	(\frac{10^{12} \text{ pm}}{\text{m}})
+\]
+\[ \boxed{R = 141 \text{ pm}} \]
+
+\subsubsection*{Error percentage of atom radius}
+Actual R $=128$ pm
+\[ \text{Error Percentage R} =
+	\frac{141 - 128}{128} \times 100 \% = \boxed{ 10.2 \%}
+\]
+
 \end{document}

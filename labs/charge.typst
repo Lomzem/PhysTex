@@ -1,0 +1,103 @@
+#set text(12pt, spacing: 200%)
+Lawjay Lee
+
+Lab Partners
+- Aaron W.
+- Wyatt S.
+- Abram J.
+
+Lab: Charge of the Electron
+
+Course: PHYS-42
+
+Section: M1069
+
+Date: 2024-02-02
+
+\
+#heading(level: 1, "Significant Numerical Results")
+#heading(level: 2, "Part 1")
+$display(
+\
+e = 1.362 times 10^(-19) "C/electron"\
+"Percent Error" e = -14.98%
+)$
+#heading(level: 2, "Part 2")
+\
+$display(
+R = 141 "pm"\
+"Percent Error R"=10.2%
+)$
+#heading(level: 1, "Conclusions/Questions")
+\
+Our results for Part 1 differ from the accepted value by nearly 15\%. While this is larger than our goal of $<$10\% error, some sources of error I will discuss later could suggest that our results still validate the actual value for the charge of the electron despite having a large percent error.
+\ \
+Our results for Part 2 are just slightly above 10\% of the accepted values. Taking into account the sources of error in our experiment, I believe our results still validate the expected value for the radius of the Cu atom.
+\ \
+The main source of error in our results and calculations is likely an inaccuracy in the change in mass of the cathode. According to our procedure, following the 40 minute bath in the copper sulfate solution, we were to clean the electrodes with distilled water and dry them using a blow dryer.
+\ \
+We performed this step, but there may have been a chance that I didn't dry the electrode long enough to completely remove all water molecules on the surface as I thought I did.
+\ \
+This excess of water molecules may have created a larger final mass reading, which would cause our calculations involving the change in mass to be less accurate. Had our change in mass been smaller, we would have had a smaller percent error with the actual value for e.
+\ \
+Besides the issue with the drying, another possible source of error in our experiment could have been the imprecision of our measuring devices; to measure the length and width of the cathode for the Part 2 calculations, we used a ruler, which was limited to 3 significant figures of precision. Because of this, our results for Part 2 were one significant figure less precise than our Part 1 results.
+#heading(level: 1, "Raw Data")
+\
+$display(
+m_(a 0) = 10.9515 "g "\
+m_(b 0) = 8.6868 "g "\
+m_(a f) = 11.4487 "g "\
+m_(b f) = 8.1941 "g "\
+I t = Q = 1283.3 "C "\
+"Length" = 4.80 "cm"\
+"Width" = 2.25 "cm"
+)$
+#heading(level: 1, "Part 1 Calculations")
+
+#heading(level: 3, "Change in cathode mass")
+\
+$display(
+"Cathode" Delta m = 11.4487 "g " - 10.9515 "g "\
+)$\
+#box($
+Delta m = 4.972 times 10^(-4) "kg"
+$, stroke: 1pt, inset: 3pt)
+\ \
+
+#heading(level: 3, "Number of ions")
+\
+$display(
+N = frac(Delta m, M) N_A =
+frac(4.972 times 10^(-4) "kg",
+63.54 times 10^(-3) "kg/mol")
+(6.022 times 10^23 "ions/mol")\
+#box($
+N = 4.712 times 10^21 "ions"
+$, stroke: 1pt, inset: 3pt)
+)$
+
+#heading(level: 3, "Charge of electron")
+\
+$display(
+e = frac(Q M, 2 Delta m N_A)\
+e = frac(
+(1283.3 " C ")(6.354 times 10^(-2) "kg/mol"),
+2(4.972 times 10^(-4) "kg")(6.022 times 10^23 "mol"^(-1))
+)\
+#box($
+e=1362 times 10^(-19) "C/electron"
+$, stroke: 1pt, inset: 3pt)
+)$
+
+#heading(level: 3, "Error percentage of electron charge")
+\
+$display(
+"Actual" e = 1.602 times 10^(-19) "C/electron"\
+"Error percentage" e = frac(
+(1.362 times 10^(-19)) - (1.602 times 10^(-19)),
+1.602 times 10^(-19)
+) times 100 % =
+#box($
+-14.98%
+$, stroke: 1pt, inset: 3pt)
+)$
