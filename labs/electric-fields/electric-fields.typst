@@ -1,0 +1,27 @@
+#set text(12pt, spacing: 200%)
+Lawjay Lee
+
+Lab Partners
+- Aaron W.
+- Wyatt S.
+- Abram J.
+
+Lab: Electric Fields
+
+Course: PHYS-42
+
+Section: M1069
+
+Date: 2024-02-09
+\
+\
+#set figure.caption(position: top)
+#heading(level: 1, "Significant Numerical Results")
+\
+#figure(
+    figure(
+     image("./point-charge.png"),
+    ),
+    caption: figure.caption("Distance vs. Intensity (Point Charge)", position: top),
+    numbering: none
+)
