@@ -1,9 +1,12 @@
 = Gauss' Law
-\
 $display(
-Iota _E = arrow(E) dot arrow(a) = E A cos theta
+arrow(A) = "Area Vector, always " perp "to face"
 )$
 \
 $display(
-Iota = integral arrow(E) dot d arrow(A)
+Iota _E = arrow(E) dot arrow(A) = E A cos theta
+)$
+\
+$display(
+Iota_E = integral arrow(E) dot d arrow(A)
 )$

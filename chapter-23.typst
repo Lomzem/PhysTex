@@ -1,0 +1,5 @@
+#heading(level: 1, "Potential Energy")
+\
+$display(
+U = frac(k q Q, r)
+)$
