@@ -17,11 +17,150 @@ Date: 2024-02-09
 \
 #set figure.caption(position: top)
 #heading(level: 1, "Significant Numerical Results")
-\
+
+#heading(level: 3, "Point Source")
+RMSE = $2.843 times 10^(-2)$
+
+#heading(level: 3, "Thin Line of Charge")
+RMSE = $2.72 times 10^(-3)$
+
+#heading(level: 3, "Thin Ring of Charge")
+RMSE = $9.275 times 10^(-2)$
+
+Measured $x_"max"$ from plot = $10.61 "cm"$
+
+Theorectical $x_"max"$ = $10.61 "cm"$
+
+Difference: $0%$
+
+Second derivative at $x_max$: $-2.026 times 10^(-5)$
+
+#heading(level: 1, "Conclusion")
+Our group was given three different equations for electric fields in three theoretical charge distributions. In our experiment, we successfully validated the accuracy of these equations by gathering data and plotting them.
+\ \
+All three situations resulted in plots with small root-mean-square errors relative to the values of intensity we measured. As a result, we concluded that the equations could accurately determine the electric field for their respective situations.
+\ \
+Parts of our procedure could have introduced some error. For example, we relied on our photometer to gather intensity data. It's possible it could have malfunctioned and gave us inaccurate intensity measurements. Moreover, other light sources in the room such as cell phones could have introduced unaccounted for intensity. Inaccurate intensity readings could change our plots and result in larger or smaller root-mean-square errors.
+
+#heading(level: 1, "Plots")
 #figure(
     figure(
      image("./point-charge.png"),
     ),
-    caption: figure.caption("Distance vs. Intensity (Point Charge)", position: top),
+    caption: figure.caption("Distance vs. Intensity (Point Source)", position: top),
     numbering: none
 )
+
+#figure(
+    figure(
+     image("./line-charge.png"),
+    ),
+    caption: figure.caption("Distance vs. Intensity (Thin Line of Charge)", position: top),
+    numbering: none
+)
+
+#figure(
+    figure(
+     image("./ring.png"),
+    ),
+    caption: figure.caption("Distance vs. Intensity (Thin Ring of Charge)", position: top),
+    numbering: none
+)
+
+#heading(level: 1, "Raw Data")
+
+#heading(level: 3, "Point Source")
+#let results = csv("./Lab Electric Fields Rawdata - Point Source.csv")
+#table(
+  columns: 2,
+  [*x (cm)*], [*Intensity (--)*],
+  ..results.flatten(),
+)
+#pagebreak()
+#heading(level: 3, "Thin Line of Charge")
+#let results = csv("./Lab Electric Fields Rawdata - Thin Line of Charge.csv")
+#table(
+  columns: 2,
+  [*r (cm)*], [*Intensity (--)*],
+  ..results.flatten(),
+)
+
+#heading(level: 3, "Thin Ring of Charge")
+#let results = csv("./Lab Electric Fields Rawdata - Thin Ring of Charge.csv")
+#table(
+  columns: 2,
+  [*x (cm)*], [*Intensity (--)*],
+  ..results.flatten(),
+)
+
+Radius of ring = $15.00 "cm"$
+
+#heading(level: 1, "Calculations")
+
+#heading(level: 2, $"Measured" x_max ":"$)
+\
+$display(
+    y = frac(230.7x, (x^2+225)^(3/2))
+    \
+    \
+    frac(d y, d x) = - frac(4614x^2-519100, 10(x^2+225)^(5/2))
+    \
+    \
+    0 = - frac(4614x^2-519100, 10(x^2+225)^(5/2))
+    \
+    \
+    "x shouldn't be negative as our position values and radius are all positive"
+    \
+    #box($
+        x_max = 10.61 "cm"
+    $, stroke: 1pt, inset: 3pt)
+)$
+
+#heading(level: 2, $"Theoretical" x_max ":"$)
+\
+Thin ring of charge: $display(
+E = frac(k q x, (x^2 + R^2)^(3/2))
+)$
+
+$display(
+frac(d E, d x) = - frac(2x^2 - R^2, (x^2 + R^2)^(5/2))
+\
+\
+0 = - frac(2x^2 - R^2, (x^2 + R^2)^(5/2))
+\
+)$
+
+
+$display(
+x_"max" = frac(R, sqrt(2))
+\
+\
+x_"max" = frac(15.00 "cm", sqrt(2))
+)$
+
+#box($
+x_"max" = 10.61 "cm"
+$, stroke: 1pt, inset: 3pt)
+
+#heading(level: 2, $"Percent Error" x_"max"$)
+\
+$display(
+"Percent Error" =
+frac(10.61-10.61, 10.61) = #box($0%$, stroke: 1pt, inset: 3pt)
+)$
+
+#heading(level: 2, $"Second Derivative"$)
+\
+$display(
+frac(d, d x) [- frac(2x^2 - R^2, (x^2 + R^2)^(5/2))] = 
+frac(6x^3 - 9R^2x, (x^2 + R^2)^(7/2))
+\
+\
+frac(6(10.61)^3 - 9(15.00)^2(10.61), ((10.61)^2 + (15.00)^2)^(7/2))
+\
+=#box($
+    -2.026 times 10^(-5)
+$, stroke: 1pt, inset: 3pt)
+)$
+
+Negative number, agrees with calculus maxima having a negative second derivative
