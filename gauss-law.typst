@@ -1,3 +1,6 @@
+#set page(fill: rgb("000000"))
+#set text(fill: rgb("ffffff"))
+
 = Gauss' Law
 $display(
 arrow(A) = "Area Vector, always " perp "to face"

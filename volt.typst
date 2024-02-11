@@ -1,3 +1,6 @@
+#set page(fill: rgb("000000"))
+#set text(fill: rgb("ffffff"))
+
 #heading(level: 1, "Potential Energy")
 \
 Point Charge

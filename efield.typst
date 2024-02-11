@@ -1,4 +1,7 @@
-// #show math.equation: set text(14pt)
+#set page(fill: rgb("000000"))
+#set text(fill: rgb("ffffff"))
+
+
 = Electric Charge
 q = electric charge, that which creates electric force of attraction or repulsion
 \
