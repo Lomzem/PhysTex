@@ -18,7 +18,7 @@ Delta V = (Delta U )/ q
 \
 
 $display(
-Delta V = - integral arrow(E) dot d arrow(r)
+Delta V = - integral_(infinity)^r arrow(E) dot d arrow(r)
 )$
 
 #heading(level: 1, "Electron Volt")
@@ -32,6 +32,7 @@ Delta K E = - Delta U = - (q Delta V) = -(-e)(1 "V ")
 
 1 electron-volt = 1 eV = $1.602 times 10^(-19) "J "$
 
+#heading(level: 3, "Infinite Line Charge")
 #box($
 
 Delta V = frac(- lambda, 2 pi epsilon_0) ln (r_f / r_0)
