@@ -48,62 +48,15 @@ Delta V = q / C_"eq"
 )$
 \
 1. Series connection (single path)
+- Charge on each capacitor is the same
 
 $display(
 frac(1, C_"eq") = sum_(i=1)^N frac(1, C_i)
 )$
 \ \ 
 2. Parallel connection (multiple paths)
+- Voltage on each capacitor is the same
 
 $display(
     C_"eq" = sum_(i=1)^(N) C_i
-)$
-#pagebreak()
-= Dielectrics
-- insert an insulator between plates
-- increases capacitance
-- allows for more charge to be stored at a given charging voltage
-
-$kappa$ = dielectric constant, a measure of how well an insulator reduces V
-
-$display(
-kappa = frac(V_0, V)
-\
-kappa >= 1
-)$
-
-Different materials have different $kappa$ values
-
-$display(
-arrow(E)_d = "displacement field"
-\
-arrow(E)_"total" = arrow(E)_0 - arrow(E)_d
-\
-sigma_d = sigma(frac(k-1, k))
-\
-epsilon = "permittivity of the dielectric"
-\
-epsilon = kappa epsilon_0
-\
-C = kappa C_0
-\
-U = frac(U_0, kappa)
-)$
-
-$display(
-        C = kappa epsilon_0 A/d
-        \
-        V_"max" = E_"max" d
-)$
-
-= Dielectric Strength
-
-- maximum $arrow(E)$-field that a dielectric can tolerate before breaking down
-- Dry air: $E_"max"$ = $3.0 times 10^(6)$ V/m
-
-= Energy Density
-$u$ = energy density = $U/"volume between plates"$
-
-$display(
-u = 1/2 epsilon_0 E^2
 )$

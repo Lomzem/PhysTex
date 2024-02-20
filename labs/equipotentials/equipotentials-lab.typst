@@ -1,0 +1,56 @@
+#set text(12pt, spacing: 200%)
+Lawjay Lee
+
+Lab Partners
+- Aaron W.
+- Wyatt S.
+- Abram J.
+
+Lab: Equipotential Curves & Electric Fields
+
+Course: PHYS-42
+
+Section: M1069
+
+Date: 2024-02-16
+
+\
+#figure(
+    figure(
+     image("./concentric-cylinders.png", width: 80%),
+    ),
+    caption: figure.caption("Concentric Cylinders", position: top),
+    numbering: none
+)
+\
+#figure(
+    figure(
+     image("./parallel-plates.png", width: 80%),
+    ),
+    caption: figure.caption("Parallel Plates", position: top),
+    numbering: none
+)
+\
+#figure(
+    figure(
+     image("./dipole.png", width: 80%),
+    ),
+    caption: figure.caption("Dipole", position: top),
+    numbering: none
+)
+
+#pagebreak()
+#figure.caption("Question 1")
+#image("./question-1.png", height: 33%, fit: "contain")
+
+\ 
+#figure.caption("Question 2")
+
+Yes, our field lines for the dipole actually look similar to the expected diagram. Just like in the diagram, we have circular curves of equipotential that are centered a bit behind the dipoles. For the positive dipole, we correctly drew the correct E-field lines. For the negative dipole, we drew lines $90 degree$ from the equipotential curves, but in the wrong direction.
+
+\
+#figure.caption("Question 3")
+
+The friend in this situation incorrectly drew the field orientation. According to the diagram, V only changes values as you moves up or down vertically, and it doesn't change values as you move horizontally. In other words, it changes based on $hat(j)$. That means that the perpendicular component of $arrow(E)$ is actually in the $hat(i)$ direction.
+
+A charge located on the 100 V curve would not change voltage and would remain 100 V is response to the friend's $E_parallel$
