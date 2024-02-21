@@ -1,0 +1,102 @@
+#set page(fill: rgb("000000"))
+#set text(fill: rgb("ffffff"))
+
+= Electric Current
+
+I = electric current, \# of coulombs of charge that passes a given point
+
+$display(
+I = frac(d q, d t)
+)$
+
+Units: C/s = 1 ampere = 1 A
+
+$v_e$ = conduction velocity; average velocity between collisions $approx 10^5$ m/s
+
+$v_d$ = drift velocity; average velocity on the macroscopic scale $approx 10^(-3)$ m/s
+
+= Carrier Density
+
+let n = charge carrier density, \# of free charges per cubic meter (1/$"m "^3$)
+
+$display(
+"pure metal" n = frac(rho N_A, M)
+)$
+
+$N_A = 6.022 times 10^(23)$ $"mol"^(-1)$
+
+$rho$ = volume density (kg/$"m "^3$)
+
+M = molar mass (kg/mol)
+
+$display(
+I = n e A v_d
+)$
+
+$e$ = charge electron
+
+let $arrow(J)$ = current density (A/$"m "^2$)
+
+$display(
+|arrow(J)| = I/A
+\
+|arrow(J)| = n e v_d
+)$
+
+= Ohm's Law
+
+$display(
+arrow(J) = sigma arrow(E)
+)$
+
+$sigma$ = electric conductivity, a measure of how well the material conducts charge
+
+let $rho$ = electric resistivity, a measure of how well the material resists current flow
+
+Units of $rho$: $Omega$ m
+
+$display(
+rho = 1 / sigma
+)$
+
+$display(
+Delta V = (frac(rho l, A)) I
+)$
+
+let $R$ = resistance
+
+$display(
+R = frac(rho l, A)
+)$
+
+Units of $R$: 1 $V/A$ = 1 ohm = 1 $Omega$
+
+= Resistivity
+
+$rho$ is not constant, it varies with temperature
+
+$display(
+rho = rho_0 (1 + alpha (T - T_0))
+)$
+
+let $alpha$ = temperature coefficient of resistivity (1/$degree$C)
+
+$display(
+R = R_0 (1 + alpha(T_f - T_0))
+)$
+, if $l$ and $A$ are constant
+
+= Power Supplies
+
+example: battery (electro chemical cell)
+- two dissimilar metals and an electrolyte
+
+let $epsilon$ = electromotive force, voltage generated/created by chemical reaction inside battery, (fixed) quantity doesn't change
+
+$V_t$ = terminal voltage, voltage that's available to some external circuit (varies)
+
+$r$ = internal resistance (varies)
+
+$display(
+V_t = epsilon - I r
+)$
