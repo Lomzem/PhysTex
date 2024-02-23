@@ -11,9 +11,22 @@ I = frac(d q, d t)
 
 Units: C/s = 1 ampere = 1 A
 
+= Drift Velocity
 $v_e$ = conduction velocity; average velocity between collisions $approx 10^5$ m/s
 
-$v_d$ = drift velocity; average velocity on the macroscopic scale $approx 10^(-3)$ m/s
+$v_d$ = drift velocity; average velocity of electrons through conductors $approx 10^(-3)$ m/s
+
+$display(
+v_d = frac(e E, m) tau
+)$
+
+$e$ = elementary charge ($1.602 times 10^(-19)$ C)
+
+$E$ = e-field
+
+$m$ = mass of electron ($9.11 times 10^(-31)$ kg)
+
+$tau$ = average time between collisions, mean free time
 
 = Carrier Density
 
@@ -31,16 +44,21 @@ M = molar mass (kg/mol)
 
 $display(
 I = n e A v_d
+\
+I = n frac(e^2 E tau, m) A
 )$
 
 $e$ = charge electron
 
+= Current Density
 let $arrow(J)$ = current density (A/$"m "^2$)
 
 $display(
 |arrow(J)| = I/A
 \
 |arrow(J)| = n e v_d
+\
+|arrow(J)| = n frac(e^2 tau, m) E
 )$
 
 = Ohm's Law
@@ -76,6 +94,10 @@ Units of $R$: 1 $V/A$ = 1 ohm = 1 $Omega$
 $rho$ is not constant, it varies with temperature
 
 $display(
+rho = frac(m, n e^2 tau)
+)$
+
+$display(
 rho = rho_0 (1 + alpha (T - T_0))
 )$
 
@@ -85,6 +107,12 @@ $display(
 R = R_0 (1 + alpha(T_f - T_0))
 )$
 , if $l$ and $A$ are constant
+
+= Conductivity
+
+$display(
+sigma = 1 / rho = frac(n e^2 tau, m)
+)$
 
 = Power Supplies
 
