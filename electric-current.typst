@@ -60,13 +60,13 @@ rho = 1 / sigma
 )$
 
 $display(
-Delta V = (frac(rho l, A)) I
+Delta V = (rho frac(l, A)) I
 )$
 
 let $R$ = resistance
 
 $display(
-R = frac(rho l, A)
+R = rho frac(l, A)
 )$
 
 Units of $R$: 1 $V/A$ = 1 ohm = 1 $Omega$
