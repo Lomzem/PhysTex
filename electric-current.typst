@@ -63,6 +63,14 @@ $display(
 
 = Ohm's Law
 
+#set box(stroke: white)
+
+$display(
+#box($
+V = I R
+$, stroke: 1pt, inset: 3pt)
+)$
+
 $display(
 arrow(J) = sigma arrow(E)
 )$
