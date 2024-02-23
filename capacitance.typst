@@ -51,11 +51,19 @@ Delta V = q / C_"eq"
 - Charge on each capacitor is the same
 
 $display(
+Delta V = Delta V_1 + Delta V_2 + Delta V_3 + ...
+)$
+
+$display(
 frac(1, C_"eq") = sum_(i=1)^N frac(1, C_i)
 )$
 \ \ 
 2. Parallel connection (multiple paths)
 - Voltage on each capacitor is the same
+
+$display(
+q = q_1 + q_2 + q_3 + ...
+)$
 
 $display(
     C_"eq" = sum_(i=1)^(N) C_i
