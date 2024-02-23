@@ -100,3 +100,24 @@ $r$ = internal resistance (varies)
 $display(
 V_t = epsilon - I r
 )$
+
+= Power in Circuits
+$display(
+Delta U = q Delta V
+)$
+
+Power:
+
+$display(
+P = (Delta U) / (Delta t) = Delta V i
+)$
+
+Power in ANY circuit element:
+$display(
+P = V i
+)$
+
+Power dissipated by resistor:
+$display(
+P = V i = i^2 R = (V^2) / R
+)$
