@@ -1,0 +1,23 @@
+#set page(fill: rgb("000000"))
+#set text(fill: rgb("ffffff"))
+
+= Combinations of Resistors
+
+1. Series Connection (single path)
+
+$display(
+R_"eq" = sum_(k=1)^N R_k
+\
+I = I_1 = I_2 = I_3
+\
+epsilon = V_"tot" = sum_(k=1)^N V_k
+)$
+
+2. Parallel Connection (multiple paths)
+$display(
+frac(1, R_"eq") = sum_(k=1)^N 1/R_k
+\
+epsilon = V_1 = V_2 = V_3
+\
+I_"tot" = sum_(k=1)^N I_k
+)$

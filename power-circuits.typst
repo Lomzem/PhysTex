@@ -1,0 +1,25 @@
+#set page(fill: rgb("000000"))
+#set text(fill: rgb("ffffff"))
+
+= Power in Circuits
+
+$display(
+P = frac(Delta U, Delta t)
+\
+)$
+
+Units: J/s or W
+
+Power Supply:
+
+$display(
+P = I V
+)$
+
+Resistors:
+
+$display(
+P = I^2 R
+\
+P = (V^2) / R
+)$
