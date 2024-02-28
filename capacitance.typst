@@ -26,6 +26,11 @@ Delta V = E d
 C = epsilon_0 frac(A,d)
 )$
 
+#heading(level: 3, "Spherical capacitor")
+$display(
+C_"sphere" = 4 pi epsilon_0 frac(a b, b - a)
+)$
+
 #heading(level: 3, "Two closely spaced charged cylinders")
 \
 $display(
