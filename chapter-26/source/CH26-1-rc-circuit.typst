@@ -1,5 +1,5 @@
-#set page(fill: rgb("000000"))
-#set text(fill: rgb("ffffff"))
+#set page(fill: rgb("#26233a"))
+#set text(fill: rgb("#e0def4"))
 
 = RC Circuit
 

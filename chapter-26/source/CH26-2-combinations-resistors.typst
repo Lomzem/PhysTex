@@ -1,23 +1,29 @@
-#set page(fill: rgb("000000"))
-#set text(fill: rgb("ffffff"))
+#set page(fill: rgb("#26233a"))
+#set text(fill: rgb("#e0def4"))
 
 = Combinations of Resistors
-
+\
 1. Series Connection (single path)
 
 $display(
 R_"eq" = sum_(k=1)^N R_k
-\
-I = I_1 = I_2 = I_3
-\
-epsilon = V_"tot" = sum_(k=1)^N V_k
+// epsilon = V_"tot" = sum_(k=1)^N V_k
 )$
 
+- In series, all resistors have the #underline("same") *charge*, including with the equivalent charge
+- In series, the *voltages* #underline("add up") to the equivalent/total voltage
+$display(
+V_"total" = V_"eq" = sum_(k=1)^N V_k
+)$
+
+\
 2. Parallel Connection (multiple paths)
 $display(
-frac(1, R_"eq") = sum_(k=1)^N 1/R_k
-\
-epsilon = V_1 = V_2 = V_3
-\
-I_"tot" = sum_(k=1)^N I_k
+    frac(1, R_"eq") = sum_(k=1)^N 1/R_k
+)$
+
+- In parallel, all resistors have the #underline("same") *voltage*, including with the equivalent charge
+- In parallel, the *currents* #underline("add up") to the equivalent/total current
+$display(
+    I_"totl" = I_"eq" = sum_(k=1)^N I_k
 )$

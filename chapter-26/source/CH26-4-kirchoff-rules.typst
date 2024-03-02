@@ -1,5 +1,5 @@
-#set page(fill: rgb("000000"))
-#set text(fill: rgb("ffffff"))
+#set page(fill: rgb("#26233a"))
+#set text(fill: rgb("#e0def4"))
 
 = Kirchoff's Rules
 
@@ -17,9 +17,11 @@ Conservation of energy
 2. Point Rule
 
 $display(
-sum_(i=1)^N I_"in" = sum_(i=1)^N I_"out"
-\
-I_1 + I_2 = I_"tot"
+    sum_(i=1)^N I_"in" = sum_(i=1)^N I_"out"
 )$
-
+\ \
 Conservation of charge
+
+$display(
+    I_1 + I_2 = I_"tot"
+)$
