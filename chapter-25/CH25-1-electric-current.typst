@@ -1,0 +1,183 @@
+#set page(fill: rgb("000000"))
+#set text(fill: rgb("ffffff"))
+
+= Electric Current
+
+I = electric current, \# of coulombs of charge that passes a given point
+
+$display(
+I = frac(d q, d t)
+)$
+
+Units: C/s = 1 ampere = 1 A
+
+= Drift Velocity
+$v_e$ = conduction velocity; average velocity between collisions $approx 10^5$ m/s
+
+$v_d$ = drift velocity; average velocity of electrons through conductors $approx 10^(-3)$ m/s
+
+$display(
+v_d = frac(e E, m) tau
+)$
+
+$e$ = elementary charge ($1.602 times 10^(-19)$ C)
+
+$E$ = e-field
+
+$m$ = mass of electron ($9.11 times 10^(-31)$ kg)
+
+$tau$ = average time between collisions, mean free time
+
+= Carrier Density
+
+let n = charge carrier density, \# of free charges per cubic meter (1/$"m "^3$)
+
+$display(
+"pure metal" n = frac(rho N_A, M)
+)$
+
+$N_A = 6.022 times 10^(23)$ $"mol"^(-1)$
+
+$rho$ = volume density (kg/$"m "^3$)
+
+M = molar mass (kg/mol)
+
+$display(
+I = n e A v_d
+\
+I = n frac(e^2 E tau, m) A
+)$
+
+$e$ = charge electron
+
+= Current Density
+let $arrow(J)$ = current density (A/$"m "^2$)
+
+$display(
+|arrow(J)| = I/A
+\
+|arrow(J)| = n e v_d
+\
+|arrow(J)| = n frac(e^2 tau, m) E
+)$
+
+= Ohm's Law
+
+#set box(stroke: white)
+
+$display(
+#box($
+V = I R
+$, stroke: 1pt, inset: 3pt)
+)$
+
+$display(
+arrow(J) = sigma arrow(E)
+)$
+
+$sigma$ = electric conductivity, a measure of how well the material conducts charge
+
+let $rho$ = electric resistivity, a measure of how well the material resists current flow
+
+Units of $rho$: $Omega$ m
+
+$display(
+rho = 1 / sigma
+)$
+
+$display(
+Delta V = (rho frac(l, A)) I
+)$
+
+let $R$ = resistance
+
+$display(
+R = rho frac(l, A)
+)$
+
+Units of $R$: 1 $V/A$ = 1 ohm = 1 $Omega$
+
+= Resistivity
+
+$rho$ is not constant, it varies with temperature
+
+$display(
+rho = frac(m, n e^2 tau)
+)$
+
+$display(
+rho = rho_0 (1 + alpha (T - T_0))
+)$
+
+let $alpha$ = temperature coefficient of resistivity (1/$degree$C)
+
+$display(
+R = R_0 (1 + alpha(T_f - T_0))
+)$
+, if $l$ and $A$ are constant
+
+= Conductivity
+
+$display(
+sigma = 1 / rho = frac(n e^2 tau, m)
+)$
+
+= Power Supplies
+
+example: battery (electro chemical cell)
+- two dissimilar metals and an electrolyte
+
+let $epsilon$ = electromotive force, voltage generated/created by chemical reaction inside battery, (fixed) quantity doesn't change
+
+$V_t$ = terminal voltage, voltage that's available to some external circuit (varies)
+
+$r$ = internal resistance (varies)
+
+$display(
+V_t = epsilon - I r
+)$
+
+= Power in Circuits
+$display(
+Delta U = q Delta V
+)$
+
+Power:
+
+$display(
+P = (Delta U) / (Delta t) = Delta V i
+)$
+
+Power in ANY circuit element:
+$display(
+P = V i
+)$
+
+Power dissipated by resistor:
+$display(
+P = V i = i^2 R = (V^2) / R
+)$
+
+= Power in Circuits
+
+$display(
+P = frac(Delta U, Delta t)
+\
+)$
+
+Units: J/s or W
+
+Power Supply:
+
+$display(
+P = I V
+)$
+
+Resistors:
+
+$display(
+P = I^2 R
+\
+P = (V^2) / R
+)$
+

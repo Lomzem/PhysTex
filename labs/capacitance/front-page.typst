@@ -1,0 +1,29 @@
+Lawjay Lee
+
+Lab Partners
+- Aaron W.
+- Wyatt S.
+- Abram J.
+
+Lab: Equipotential Curves & Electric Fields
+
+Course: PHYS-42
+
+Section: M1069
+
+Date: 2024-02-23
+
+= Conclusions
+
+The capacitors behaved as we expected them to in the different situations.
+
+In Part 1, when we removed Capacitor 1 from the power supply and connected the positive terminals of the capacitors together, the capacitors shared the same voltage as we expected.
+\ \
+Moreover, the sum of their charges was very close to the charge of Capacitor 1 before they shared charge with a percent difference of 0.0975\%, demonstrating the conservation of charge.
+\ \
+In Part 2, we instead charged Capacitor 2 first and got a 10.0\% difference between $q_"total"$ and $Q_2$
+\ \
+In Part 3, we also successfully confirmed conservation of charge when connecting the capacitors in series with a 0.00\% difference between $q_"total"$ and $Q_"total"$
+\ \
+In Part 4, we successfully confirmed that energy was lost when we connected the capacitors in parallel and connected their opposite poles, allowing some of the charge to recombine. This recombination caused some energy to get lost because some charge was lost. The percent difference of $U_"total after"$ from $U_"total before"$ was $-189\%$
+

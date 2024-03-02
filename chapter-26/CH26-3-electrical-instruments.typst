@@ -1,0 +1,28 @@
+#set page(fill: rgb("000000"))
+#set text(fill: rgb("ffffff"))
+
+= Electrical Instruments
+
+1. Voltmeter
+- Always attached in parallel with the element whose voltage you're measuring
+- Never need to disturb the circuit
+- Ideal: "Infinite" resistance
+\
+2. Ammeter
+- Always connected in series
+- Always disturbs the circuit
+- Ideal: zero resistance
+\
+Ammeter:
+
+$display(
+I_"max" R_"G " = (I-I_"max")R_"shunt"
+)$
+\ \ 
+Voltmeter:
+
+$display(
+I_"max" (R_"G" + R_"series") = (I - I_"max")R
+)$
+\ \ \ 
+

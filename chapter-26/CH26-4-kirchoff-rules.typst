@@ -1,0 +1,25 @@
+#set page(fill: rgb("000000"))
+#set text(fill: rgb("ffffff"))
+
+= Kirchoff's Rules
+
+1. Loop Rule
+
+$display(
+(sum_(i=1)^N V_i)_"loop" = 0
+)$
+
+Conservation of energy
+
+- Downstream subtract $V$
+- Upstream add $V$
+\
+2. Point Rule
+
+$display(
+sum_(i=1)^N I_"in" = sum_(i=1)^N I_"out"
+\
+I_1 + I_2 = I_"tot"
+)$
+
+Conservation of charge
