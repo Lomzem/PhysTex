@@ -25,5 +25,5 @@ $display(
 - In parallel, all resistors have the #underline("same") *voltage*, including with the equivalent charge
 - In parallel, the *currents* #underline("add up") to the equivalent/total current
 $display(
-    I_"totl" = I_"eq" = sum_(k=1)^N I_k
+    I_"total" = I_"eq" = sum_(k=1)^N I_k
 )$
