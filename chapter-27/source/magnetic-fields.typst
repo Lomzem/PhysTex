@@ -1,0 +1,44 @@
+#set page(fill: rgb("#26233a"))
+#set text(fill: rgb("#e0def4"))
+
+= Magnetic Fields
+
+- Always form closed loops
+
+- Can't isolate the poles
+
+- $arrow(Beta)$-fields are only created by #underline("moving") charges
+
+- Only moving charges interact with a $arrow(Beta)$ field
+
+- Creation of $arrow(Beta)$ or interaction with $Beta$, have to deal with all 3-dimensions
+
+= Magnetic Force
+
+- Centripetal
+
+- $display(
+arrow(F)_m perp arrow(v)
+)$
+
+- $display(
+arrow(F)_m perp arrow(Beta)
+)$
+
+Lorenz Force:
+
+$display(
+arrow(F)_m = q (arrow(v) times arrow(B))
+)$
+
+Direction: RHR, if $q$ is (-) flip 180$degree$
+
+Units: 1 N/Am = 1 tesla = 1 T
+
+1 gauss = 1 G = $10^(-4)$ T
+
+= Equations
+\ 
+$display(
+R = frac(m v, q Beta)
+)$
