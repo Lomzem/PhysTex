@@ -10,7 +10,7 @@ R_"eq" = sum_(k=1)^N R_k
 // epsilon = V_"tot" = sum_(k=1)^N V_k
 )$
 
-- In series, all resistors have the #underline("same") *charge*, including with the equivalent charge
+- In series, all resistors have the #underline("same") *current*, including with the equivalent current
 - In series, the *voltages* #underline("add up") to the equivalent/total voltage
 $display(
 V_"total" = V_"eq" = sum_(k=1)^N V_k
