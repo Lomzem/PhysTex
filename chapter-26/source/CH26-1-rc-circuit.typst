@@ -18,9 +18,15 @@ tau = R C
 = Equations
 
 $display(
-q = Q_0 e^(-t slash R C)
+q = Q_0 e^(-t slash tau)
 \
 i = epsilon / R e ^(-t slash tau)
+\
+i = - frac(Q_0, tau) e^(-t slash tau)
+\
+i = I_0 e ^(-t slash tau)
+\
+V = V_0 e^(-t slash tau)
 )$
 
 #heading(level: 2, "Charging")
