@@ -27,6 +27,8 @@ i = - frac(Q_0, tau) e^(-t slash tau)
 i = I_0 e ^(-t slash tau)
 \
 V = V_0 e^(-t slash tau)
+\
+I = frac(V_0, R) e^(-t slash R C)
 )$
 
 #heading(level: 2, "Charging")
