@@ -15,19 +15,23 @@ $display(
 tau = R C
 )$
 
-#heading(level: 2, "Charging")
-\
+= Equations
+
 $display(
-q = epsilon C (1 - e^(-t / tau))
+q = Q_0 e^(-t slash R C)
 \
-i = epsilon / R e ^(-t / tau)
+i = epsilon / R e ^(-t slash tau)
+)$
+
+#heading(level: 2, "Charging")
+$display(
+q = epsilon C (1 - e^(-t slash tau))
+\
 )$
 
 #heading(level: 2, "Discharging")
-\
 $display(
-q = epsilon C e^(-t / tau)
+q = epsilon C e^(-t slash tau)
 \
-i = epsilon / R e^(-t / tau)
 )$
 
