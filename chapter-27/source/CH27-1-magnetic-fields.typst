@@ -1,7 +1,7 @@
 #set page(fill: rgb("#26233a"))
 #set text(fill: rgb("#e0def4"))
 
-= Magnetic Fields
+= Magnetic (B)-Fields
 
 - Always form closed loops
 
@@ -12,6 +12,14 @@
 - Only moving charges interact with a $arrow(Beta)$ field
 
 - Creation of $arrow(Beta)$ or interaction with $Beta$, have to deal with all 3-dimensions
+
+= B-Fields
+
+Direction: RHR, if $q$ is (-) flip 180$degree$
+
+$arrow(Beta)$ units: 1 N/Am = 1 tesla = 1 T
+
+1 gauss = 1 G = $10^(-4)$ T
 
 = Magnetic Force
 
@@ -25,20 +33,17 @@ arrow(F)_m perp arrow(v)
 arrow(F)_m perp arrow(Beta)
 )$
 
-Lorenz Force:
+= Lorenz Force
 
 $display(
 arrow(F)_m = q (arrow(v) times arrow(B))
 )$
 
-Direction: RHR, if $q$ is (-) flip 180$degree$
 
-Units: 1 N/Am = 1 tesla = 1 T
+= Velocity Selector
+if $|F_"electric"| = |F_"magnetic"|$:
 
-1 gauss = 1 G = $10^(-4)$ T
-
-= Equations
-\ 
 $display(
-R = frac(m v, q Beta)
+v = E / Beta
 )$
+

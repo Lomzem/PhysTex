@@ -1,0 +1,32 @@
+#set page(fill: rgb("#26233a"))
+#set text(fill: rgb("#e0def4"))
+
+Radius of circular motion:
+
+$display(
+R = frac(m v, q Beta)
+)$
+
+Cyclotron frequency:
+
+$display(
+omega_c = frac(q Beta, m)
+)$
+
+Angular velocity, linear velocity relationship:
+
+$display(
+omega_c = v / R
+)$
+
+Centripetal acceleration:
+
+$display(
+a_c = (v^2) / R
+)$
+
+Period, velocities relationship
+
+$display(
+T = (2 pi) / omega_c = (2 pi R) / v
+)$

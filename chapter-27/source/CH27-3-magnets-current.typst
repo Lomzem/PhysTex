@@ -1,0 +1,52 @@
+#set page(fill: rgb("#26233a"))
+#set text(fill: rgb("#e0def4"))
+
+= Magnetic Force and Current
+
+$display(
+arrow(F)_m = I (arrow(L) times arrow(Beta))
+)$
+
+$arrow(L)$ (length of cylinder) vector points parallel to current ($I$)
+
+= Closed loop of current
+
+#heading(level: 3, "Magnetic Dipole Moment")
+
+let $arrow(mu)$ = magnetic dipole moment
+
+$arrow(mu)$ units: $"Am"^2$
+
+$display(
+|arrow(mu)| = I A
+)$
+
+$arrow(mu)$ direction from RHR, curl fingers in direction of current
+
+#heading(level: 3, "Torque and magnetic dipole moment")
+
+$display(
+arrow(tau) = arrow(mu) times arrow(Beta)
+)$
+
+= Potential Energy and Magnetic Dipole
+
+#heading(level: 3, "E-field")
+
+$display(
+arrow(tau) = arrow(p) times arrow(E)
+)$
+
+$display(
+U = - arrow(p) dot arrow(E)
+)$
+
+#heading(level: 3, "B-field")
+
+$display(
+arrow(tau) = arrow(mu) times arrow(Beta)
+)$
+
+$display(
+U = -arrow(mu) dot arrow(Beta)
+)$
