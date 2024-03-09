@@ -4,7 +4,7 @@
 = Magnetic Force and Current
 
 $display(
-arrow(F)_m = I (arrow(L) times arrow(Beta))
+arrow(F)_m = L (arrow(I) times arrow(Beta))
 )$
 
 $arrow(L)$ (length of cylinder) vector points parallel to current ($I$)
