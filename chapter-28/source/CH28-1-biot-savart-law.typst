@@ -1,0 +1,27 @@
+#set page(fill: rgb("#26233a"))
+#set text(fill: rgb("#e0def4"))
+
+= Biot-Savart Law
+
+$mu_0$ = permeability of free space
+
+Units: Tm/A
+
+$display(
+mu_0 = 4 pi times 10^(-7) "Tm/A"
+)$
+
+
+$display(
+d arrow(B) = mu_0 / (4pi) (I d arrow(l) times hat(r)) / (r^2)
+)$
+
+$display(
+Beta = (mu_0 I)/(4 pi x) (2a) / (sqrt(x^2 + a^2))
+)$
+
+As $a arrow.r infinity$,
+
+$display(
+Beta = (mu_o I) / (2 pi r)
+)$
