@@ -47,3 +47,8 @@ $display(
 v = E / Beta
 )$
 
+= Magnetic Flux
+
+$display(
+Phi_Beta = integral arrow(Beta) dot d arrow(A)
+)$
