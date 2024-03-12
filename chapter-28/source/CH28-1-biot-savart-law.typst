@@ -1,27 +1,106 @@
 #set page(fill: rgb("#26233a"))
 #set text(fill: rgb("#e0def4"))
 
-= Biot-Savart Law
+= Permeability of free space
 
 $mu_0$ = permeability of free space
 
 Units: Tm/A
 
 $display(
-mu_0 = 4 pi times 10^(-7) "Tm/A"
+    mu_0 = 4 pi times 10^(-7) "Tm/A"
 )$
 
+= Magnetic Field Produced by Moving Charges
 
 $display(
-d arrow(B) = mu_0 / (4pi) (I d arrow(l) times hat(r)) / (r^2)
+    arrow(Beta)_"point charge" = (frac(mu_0, 4 pi)) (frac(q, r^2)) (arrow(v) times hat(r))
+)$
+
+= Magnetic Field Produced by #underline("Straight") Currents
+
+$display(
+    |arrow(Beta)_"current"| = frac(mu_0 I, 2 pi r)
+)$
+
+Direction: Point right thumb in direction of current flow, curl fingers around wire. Direction fingers curl represent direction of magnetic field around wire
+
+= Magnetic Force Between Parallel Currents
+
+$display(
+    |arrow(F)_"mutual"| = frac(mu_0 I_1 I_2 L, 2 pi r)
 )$
 
 $display(
-Beta = (mu_0 I)/(4 pi x) (2a) / (sqrt(x^2 + a^2))
+    arrow(F)_1 = I_1 (arrow(L)_1 times arrow(B)_2)
 )$
 
-As $a arrow.r infinity$,
+Direction:
+- Same Current Direction: Attracts
+- Opposite Current Direction: Repels
+
+= Mutual Magnetic Force on Parallel Charges
+\
+$display(
+    |arrow(F)_"mutual"| = frac(mu_0 q_1 q_2 v_1 v_2, 4 pi r^2)
+)$
+
+Direction:
+- Same Direction, Same Charge: Attract
+- Opposite Direction, Opposite Charge: Attract
+- Anything Else: Repel
+
+= Magnetic Field Produced by #underline("Curved") Current Loops
+
+#heading(level: 3, "Single or Multiple Loops")
 
 $display(
-Beta = (mu_o I) / (2 pi r)
+    Beta_"center of loop" = frac(mu_0 I, 2 R) N
 )$
+
+Direction:
+- Current curves: Fingers
+- B is straight: Thumb
+
+#heading(level: 3, "Solenoid (very long loop)")
+
+$display(
+    Beta = frac(mu_0 I, L) N = mu_0 I n
+)$
+
+let $display(
+    n = N/L
+)$
+
+Total Length of Wire $display(
+= (2 pi R) N
+)$
+
+= Magnetic Field by Toroidal Solenoids
+
+$display(
+    Beta = frac(mu_0 I, 2 pi r) N
+)$
+
+$r$: distance from center
+
+Direction: Same as Loops
+
+$arrow(Beta)$ exists between $R_"inner"$ and $R_"outer"$, zero outside
+
+= Biot-Savart Law
+
+$display(
+    d arrow(B) = mu_0 / (4pi) (I d arrow(l) times hat(r)) / (r^2)
+)$
+
+//
+// $display(
+// Beta = (mu_0 I)/(4 pi x) (2a) / (sqrt(x^2 + a^2))
+// )$
+//
+// As $a arrow.r infinity$,
+//
+// $display(
+// Beta = (mu_o I) / (2 pi r)
+// )$
