@@ -1,0 +1,10 @@
+#set page(fill: rgb("#26233a"))
+#set text(fill: rgb("#e0def4"))
+
+= Ampere's Law
+
+True for #underline("all") B-Fields:
+
+$display(
+    integral.cont arrow(B) dot d arrow(l) = mu_0 i_"enc"
+)$

@@ -1,0 +1,116 @@
+Lawjay Lee
+
+Lab Partners
+- Wyatt S.
+- Abram J.
+
+Lab: DC Circuits
+
+Course: PHYS-42
+
+Section: M1069
+
+Date: 2024-03-15
+
+= Significant Numerical Results
+
+#heading(level: 2, "Series Circuit")
+
+$V_"supply"=10.03$ V
+
+#let results = csv("./series-circuit.csv")
+
+#table(
+    columns: 5,
+    [*$R$ ($Omega$)*], [*$V_"meas"$ (V)*], [*$I$ (mA)*], [*$V_"theor"$ (V)*], [*% Diff*],
+    ..results.flatten(),
+)
+
+$P_"in" = 6.52 times 10^(-2)$ W
+
+$P_"lost" = 6.47 times 10^(-2)$ W
+
+Power Percent Diff $=0.770\%$
+
+#heading(level: 2, "Parallel Circuits")
+
+$V_"supply" = 10.05$ V
+
+$I_"supply" = 0.133$ A
+
+#let results = csv("./parallel-circuit.csv")
+
+#table(
+    columns: 5,
+    [*$R$ ($Omega$)*], [*$V$ (V)*], [*$I_"meas"$ (mA)*], [*$I_"theor"$ (mA)*], [*% Diff*],
+    ..results.flatten(),
+)
+
+$P_"in" = 1.34$ W
+
+$P_"lost" = 1.29$ W
+
+Power Percent Diff $=3.80\%$
+
+#pagebreak()
+
+#heading(level: 2, "Kirchoff's Rules")
+
+$epsilon_1 = 3.1$ V
+
+$epsilon_2 = 6.17$ V
+
+#let results = csv("./kirchoff.csv")
+
+#table(
+    columns: 7,
+    [*$R$ ($Omega$)*], [*$V_"theo"$ (V)*], [*$V_"meas"$ (V)*], [*% Diff*], [*$I_"theor"$ (mA)*], [*$I_"meas"$ (mA)*], [*% Diff*],
+    ..results.flatten(),
+)
+
+#heading(level: 2, "RC Circuit")
+
+$R=103.1 times 10^3$ $Omega$
+
+$C=1470 times 10^(-6)$ F
+
+$epsilon = 10.0$ V
+
+$tau_"theor" = 151.6$ s
+
+$tau_"meas" = 156.9$ s
+
+$tau$ percent diff $=3.50\%$
+
+= Conclusions
+
+In the series circuit, we verified that our $V_"theoretical"$ accurately approximated our $V_"measured"$ and that the power delivered to the circuit by the power supply was close to the power that was emitted by the resistors.
+\
+\
+In the parallel circuit, we verified that our $I_"theoretical"$ accurately approximated our $I_"measured"$ and that the power delivered to the circuit by the power supply was close to the total power emitted by the resistors.
+\
+\
+In the circuit involving Kirchoff's Rules, we could not verify that the theoretical current and voltage values derived from Kirchoff's Rules could give us an accurate value for the current and voltage.
+\
+\
+In RC Circuit, we found that the theoretical calculation for the time constant:
+$display(
+tau = R C
+)$, accurately approximated our actual, measured value for the time constant.
+
+= Sources of Error
+
+While the other parts of the experiment provided small percent difference values, in the Kirchoff's Rules part of the experiment, we failed to calculate an current and voltage that accurately modeled our measured current and voltage. During measurements, we could have incorrectly measured the current that passed through each resistor, causing us to have a theoretical current much different from our measured current.
+\
+\
+Additionally, our calculations for the theoretical voltage relied on the theoretical current, so this inaccuracy in measuring the current also caused the theoretical voltage to have a much smaller value than measured.
+
+#pagebreak()
+
+Finally, in the RC Circuit section, to get the measured time constant ($tau$) value, instead of taking the $ln(V)$ and plotting it vs time, we defined our own equation in LoggerPro that modeled the equation:
+
+$display(
+    V = epsilon e^(-t slash tau)
+)$
+
+In the attached chart, the value for B calculated by LoggerPro represents the time constant. Taking the natural log of the voltages and plotting those values vs time could have resulted in a slightly different time constant.

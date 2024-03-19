@@ -94,13 +94,9 @@ $display(
     d arrow(B) = mu_0 / (4pi) (I d arrow(l) times hat(r)) / (r^2)
 )$
 
-//
-// $display(
-// Beta = (mu_0 I)/(4 pi x) (2a) / (sqrt(x^2 + a^2))
-// )$
-//
-// As $a arrow.r infinity$,
-//
-// $display(
-// Beta = (mu_o I) / (2 pi r)
-// )$
+= Magnetic Field by Finite Straight Line of Current
+
+$display(
+Beta = (mu_0 I)/(4 pi x) (2a) / (sqrt(x^2 + a^2))
+)$
+
