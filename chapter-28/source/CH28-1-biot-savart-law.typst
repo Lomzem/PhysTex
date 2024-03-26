@@ -97,6 +97,6 @@ $display(
 = Magnetic Field by Finite Straight Line of Current
 
 $display(
-Beta = (mu_0 I)/(4 pi x) (2a) / (sqrt(x^2 + a^2))
+    B_x = frac(mu_0 N I a^2, 2(x^2 + a^2)^(3 slash 2))
 )$
 
