@@ -1,0 +1,153 @@
+#set page(fill: rgb("#26233a"))
+#set text(fill: rgb("#e0def4"))
+
+= Electromagnetic Induction
+
+$arrow(B)$ does #underline("not") produce $I$
+
+$display(
+    frac(d Phi_Beta, d t)
+)$ produces $I$
+
+= Faraday's Law:
+\
+$display(
+    epsilon_"ind" = - frac(d Phi_Beta, d t)
+)$
+
+Induces $I$ produces a second $Beta$ field that counteracts the changing $Phi_Beta$
+
+= Lenz Law
+is about opposing B-field
+
+= In Class HW
+
+#heading(level: 2, "29.8")
+
+$display(
+    Phi_B = arrow(B) dot arrow(A)
+    \
+    Phi_B = 1.4 e^(-0.057t) (pi r^2) sin(60 degree)
+    \
+    epsilon_"ind" = - frac(d Phi_B, d t)
+    \
+    epsilon_"ind" = -1.4 pi r^2 sin(60 degree) (-0.057 e^(-0.057t))
+    \
+    epsilon_"ind" = 0.122 e^(-0.057t)
+)$
+
+#heading(level: 3, "Part B")
+
+t = ? when E_ind = 1/16 (.122)
+
+$display(
+    1/16 = e^(-0.057t)
+    \
+    t = frac(ln(16), 0.057)
+)$
+
+#heading(level: 2, "29.4")
+
+$display(
+    epsilon_"av" = frac(Delta Phi_B, Delta t) = frac(Phi_"f" - Phi_0, Delta t) = frac(Phi_0, Delta t) = frac(N B A cos(0 degree), Delta t)
+)$
+
+$display(
+    I_"avg" = frac(epsilon_"avg", R)
+)$
+
+$display(
+    Q = I_"avg" Delta t
+)$
+
+#heading(level: 2, "29.7")
+
+#heading(level: 3, "Part A")
+
+B at r?
+
+$display(
+    Beta = frac(mu_0 i, 2 pi r)
+)$
+
+Direction: $i times r$
+
+#heading(level: 3, "Part 3")
+
+Flux through narrow shaded strip?
+
+$display(
+    d Phi_B = B dif A cos(0 degree)
+    \
+    d Phi_B = frac(mu_0 i, 2 pi r) L (dif r)
+    \
+    Phi_B = integral_a^b dif Phi_B = frac(mu_0 i L, 2 pi) integral_a^b frac(dif r, r)
+    \
+    Phi_B = frac(mu_0 i L, 2 pi) ln(b / a)
+)$
+
+#heading(level: 3, "Part E")
+
+Induced EMF?
+
+Only current changing with time
+
+Want *magnitude*
+
+$display(
+    epsilon_"ind" = frac( dif Phi_B, dif t) = frac(- mu_0 L ln(b/a), 2 pi) frac(dif i, dif t)
+)$
+
+#heading(level: 2, "29.16")
+
+Current is constant so B-field is const at each point
+
+Movement of loops causes change in flux
+
+$Phi_B$ decreases for A, $epsilon_"ind" = 0$, $I_"ind"$ is CCW to create B-field that in opposite direction
+
+#heading(level: 3, "net force wire exerts on loop")
+
+$display(
+    arrow(F)_m = I (arrow(l) times arrow(Beta))
+)$
+
+Side forces equal in magnitude
+
+Closer force (up/down) is stronger
+
+No induced current means no net force
+
+No change in mag flux means no induced emf means no induced current
+
+= Motional EMF
+
+$display(
+    epsilon_"ind" = frac(dif, dif t) (B A cos(0 degree)) = B frac(dif A, dif t)
+    \
+    epsilon_"ind" = B l frac(dif x, dif t)
+    \
+    epsilon_"ind" = B l v "IMPORTANT"
+)$
+
+#heading(level: 2, "29.28")
+
+$display(
+    sum arrow(F) = m arrow(a)
+    \
+    I L B = -m frac(dif v, dif t)
+    \
+    frac(epsilon_"ind", R) L B = -m frac(dif v, dif t)
+    \
+    B L v L B/R = -m frac(dif v, dif t)
+    \
+    frac(B^2 L^2, m R) dif t = - frac(dif v, v)
+    \
+    frac(B^2 L^2, m R) integral_0^t dif t = - integral_(v_0)^(v_f) frac(dif v, v)
+    \
+    frac(-B^2 l^2 t, m R) = ln(v_f / v_0) = k
+    \
+    e^k = v_f / v_0
+    \
+    v_f = v_0 e^(frac(-B^2 l^2 t, m R))
+)$
