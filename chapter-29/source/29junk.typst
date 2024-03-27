@@ -151,3 +151,11 @@ $display(
     \
     v_f = v_0 e^(frac(-B^2 l^2 t, m R))
 )$
+
+#heading(level: 3, "29.31")
+
+$display(
+    epsilon_"ind" = B L v = I_"ind" R
+    \
+    v = frac(I_"ind" R, L B)
+)$
