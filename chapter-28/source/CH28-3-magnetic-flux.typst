@@ -1,0 +1,16 @@
+#set page(fill: rgb("#26233a"))
+#set text(fill: rgb("#e0def4"))
+
+= Magnetic Flux
+
+$display(
+    Phi_Beta = integral arrow(B) dot d arrow(A) = 0
+)$
+
+Units:
+
+1 T$"m "^2$ \= 1 weber \= 1 Wb
+
+1 G c$"m "^2$ = 1 maxwell = 1 Mx
+
+$10^8$ Mx = 1 Wb
