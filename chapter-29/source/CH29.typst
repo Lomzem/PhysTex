@@ -1,24 +1,20 @@
 #set page(fill: rgb("#26233a"))
 #set text(fill: rgb("#e0def4"))
 
+#show math.equation: math.display
+
 = Electromagnetic Induction
 
 $arrow(B)$ does #underline("not") produce $I$
 
-$display(
-    frac(dif Phi_Beta, dif t)
-)$ produces $I$
+$frac(dif Phi_Beta, dif t)$ produces $I$
 
 = Ohm's Law
-$display(
-    epsilon_"ind" = i_"ind" R
-)$
+$epsilon_"ind" = i_"ind" R$
 
 = Faraday & Lenz's Law
 
-$display(
-    epsilon_"ind" = - N frac(dif Phi_Beta, dif t)
-)$
+$epsilon_"ind" = - N frac(dif Phi_Beta, dif t)$
 
 The direction of $i_"ind"$ creates a $arrow(Beta)_"ind"$ that tries to #underline("oppose") the change in $Phi_Beta$
 
@@ -28,11 +24,7 @@ Direction: Thumb points towards $arrow(Beta)_"ind"$, Fingers curl around $i_"ind
 
 Changing $Phi_Beta$ through motion ($v$) produces a *motional $epsilon_"ind"$*
 
-$display(
-    epsilon_"ind" = v Beta L
-)$
+$underbrace(epsilon_"ind", V) = underbrace(v Beta, E) underbrace(L, d)$
 
 Similar to:
-$display(
-    V = E d
-)$
+$V = E d$
